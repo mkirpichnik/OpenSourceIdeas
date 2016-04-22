@@ -1,6 +1,42 @@
 ﻿body {
+	background: url("../img/background.jpg") 50% 0%/cover no-repeat;
+	background-attachment: fixed;
+	min-width:1000px;
+}
+.main-heading{
+	font-family: 'open_sansregular';
+	color:#fff;
+	text-align: center;
+	font-size:100px;
+	margin-top:90px;
 }
 
+.heading2{
+	font-family: 'open_sanslight';
+	color:#fff;
+	text-align: center;
+	font-size:30px;
+}
+
+.arrow{
+	width:50px;
+	height:70px;
+	background: url("../img/arrows.png") 50% 50%/cover no-repeat;
+	margin:0 auto;
+	margin-top:200px;
+}
+
+.arrowtext{
+	display: block;
+	font-family: 'open_sanslight';
+	color:#fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size:18px;
+	margin-top:10px;
+}
+
+/*************Auth Pages*****************/
 #header{
     width:100%;
     padding:10px 0;
@@ -81,11 +117,11 @@
     margin-top:10%;
 }
 
-#header .right-navigation .verticale-divider{
-    display: block;
-    width: 1px;
-    background: rgba(128, 128, 128, 0.2);
-    height: 50px;
-    float: right;
-    margin: 5px 20px;
+#header .right-navigation .verticale-divider {
+        display: block;
+        width: 1px;
+        background: rgba(128, 128, 128, 0.2);
+        height: 50px;
+        float: right;
+        margin: 5px 20px;
 }
