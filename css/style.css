@@ -322,6 +322,18 @@ a:focus{
 	height:16px;
 }
 
+.four-slide form h3{
+	font-family: 'open_sanslight';
+	color:#fff;
+	font-size:40px;
+	margin-top:-10px;
+}
+
+.underline{
+	background-color: #fff;
+	height: 2px;
+}
+
 /*************Auth Pages*****************/
 /*************Auth Header*****************/
 
