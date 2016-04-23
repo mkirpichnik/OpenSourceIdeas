@@ -3,6 +3,14 @@
 	background-attachment: fixed;
 	min-width:1000px;
 }
+
+a,
+a:hover,
+a:focus{
+	color:#fff;
+	text-decoration: none;
+}
+
 .main-heading{
 	font-family: 'open_sansregular';
 	color:#fff;
@@ -36,6 +44,106 @@
 	margin-top:10px;
 }
 
+.section2{
+	text-align: center;
+	
+}
+
+.block{
+	margin-top:0px;
+	display: inline-block;
+	width:370px;
+	vertical-align: top;
+}
+
+.block h3{
+	font-family: 'open_sansbold';
+	color:#fff;
+	text-align: center;
+}
+
+.round{
+	width:250px;
+	height:250px;
+	margin:0 auto;
+	border-radius: 50%;
+	border:2px solid #fff;
+}
+
+.round-1{
+	background: url("../img/technology.png") 50% 50% no-repeat;
+}
+
+.round-2{
+	background: url("../img/people.png") 50% 50% no-repeat;
+}
+
+.round-3{
+	background: url("../img/up-arrow.png") 50% 50% no-repeat;
+}
+
+.quote{
+	font-family: 'open_sanslight';
+	color:#fff;
+	margin-top:50px;
+}
+
+.author{
+	display: block;
+	font-family: 'open_sanslight_italic';
+	color:#fff;
+	font-size:20px;
+	position: relative;
+	left:300px;
+}
+
+.startButton{
+	font-family: 'open_sansbold';
+	margin:0 auto;
+	margin-top:30px;
+	height:60px;
+	width:250px;
+	color:#fff;
+	background-color:transparent;
+	outline:0;
+	border: 2px solid #fff;
+	text-transform: uppercase;
+	font-size:20px;
+	transition: all .2s ease-in-out;
+}
+
+.startButton:hover{
+	background-color: #fff;
+	color:#000;
+	transition: all .2s ease-in-out;
+}
+
+.underButton{
+	width:200px;
+	margin:0 auto;
+	margin-top:10px;
+	text-align: center;
+}
+
+.text1{
+	font-family: 'open_sanslight';
+	color:#fff;
+	float:left;
+}
+
+.text1 .log:hover{
+	text-decoration: underline;
+}
+
+.facebook-icon{
+	display: inline-block;
+	width:24px;
+	height:24px;
+	border-radius: 7px;
+	background: #fff url("../img/facebook.png") 50% 50% no-repeat;
+	position: relative;
+	top:6px;
+}
 /*************Auth Pages*****************/
 /*************Auth Header*****************/
 
