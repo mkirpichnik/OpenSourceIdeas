@@ -220,21 +220,6 @@ a:focus{
 
 #fullpage form .submitButton:hover{
 	background-color:#fff;
-	transition: all .2s ease-in-out;
-}
-
-#fullpage form .submitButton a{
-	display: block;
-	text-align: center;
-	transition: all .2s ease-in-out;
-	width:inherit;
-	height: inherit;
-	padding-top:12px;
-	position: relative;
-	z-index: 30;
-}
-
-#fullpage form .submitButton:hover a{
 	color:#000;
 	transition: all .2s ease-in-out;
 }
