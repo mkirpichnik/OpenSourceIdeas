@@ -1108,6 +1108,75 @@ a:focus{
     font-size:18px;
 }
 
+/***************User Page*******************/
+
+#user-info{
+    width:100%;
+}
+
+#user-info .user-info-wrapper{
+    margin: 50px auto 0 auto;
+    padding: 10px 24px;
+    display:block;
+    width:100%;
+    float:left;
+}
+
+#user-info .user-info-wrapper .user-info-left,
+#user-info .user-info-wrapper .user-info-right{
+    display:block;
+    float:left;
+    width:50%;
+}
+
+#user-info .about-user,
+#user-info .about-user > .about-item > ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+#user-info .about-user{
+    float: left;
+    padding: 50px 0;
+}
+
+#user-info .about-user > .about-item{
+    display:block;
+    width:100%;
+    float:left;
+    margin-bottom:10px;
+    font-family:'open_sansregular';
+    font-size:24px;
+}
+
+#user-info .about-user > .about-item > ul > li{
+    display:block;
+    float:left;
+    margin-right:5px;
+}
+
+#user-info .about-user > .about-item .field-type{
+    font-family:'open_sansbold';
+}
+
+#user-info .about-user > .about-item .field-value{
+    font-family:'open_sansitalic';
+}
+
+#user-info .user-photo{
+    width:400px;
+    float:right;
+}
+
+#user-info .user-photo img{
+    display:block;
+    margin:0 auto;
+    max-width:400px;
+    height:auto;
+}
+
+
 #footer{
     margin-top:70px;
     border-bottom:none;
