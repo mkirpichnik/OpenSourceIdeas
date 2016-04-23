@@ -386,6 +386,17 @@ a:focus{
 	font-size:70px;
 }
 
+#fullpage .first-slide form,
+#fullpage .first-slide form input,
+#fullpage .third-slide form,
+#fullpage .third-slide form input,
+#fullpage .four-slide form,
+#fullpage .four-slide form textarea{
+	border-radius: 5px;
+}
+
+
+
 /*************Auth Pages*****************/
 /*************Slick-Slider*****************/
 
