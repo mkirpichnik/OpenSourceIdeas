@@ -60,6 +60,9 @@ a:focus{
 	font-family: 'open_sansbold';
 	color:#fff;
 	text-align: center;
+	margin:0 auto;
+	margin-top:20px;
+	width:250px;
 }
 
 .round{
@@ -131,7 +134,7 @@ a:focus{
 	float:left;
 }
 
-.text1 .log:hover{
+.text1 .log{
 	text-decoration: underline;
 }
 
@@ -144,6 +147,90 @@ a:focus{
 	position: relative;
 	top:6px;
 }
+
+#fullpage form{
+	width:400px;
+	border:1px solid #fff;
+	margin:0 auto;
+	padding:20px;
+}
+
+#fullpage form input,
+#fullpage form input:hover,
+#fullpage form input:focus{
+	outline:0;
+}
+
+#fullpage form input[type="text"]{
+	font-family: 'open_sanslight';
+	display: block;
+	width:80%;
+	height:50px;
+	margin:0 auto;
+	margin-bottom:10px;
+	border:1px solid #fff;
+	background-color:transparent;
+	color:#fff;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:20px;
+}
+
+#fullpage form input::-webkit-input-placeholder{
+	color:#fff;
+}
+
+#fullpage form input[type="submit"]{
+	font-family: 'open_sansbold';
+	width:150px;
+	height:50px;
+	background-color: transparent;
+	color:#fff;
+	border:1px solid #fff;
+	margin-top:30px;
+	transition: all .2s ease-in-out;
+	font-size:18px;
+}
+
+#fullpage form input[type="submit"]:hover{
+	background-color:#fff;
+	color:#000;
+	transition: all .2s ease-in-out;
+}
+
+#fullpage form p{
+	font-family: 'open_sanslight';
+	color:#fff;
+	margin-top:5px;
+}
+
+#fullpage form p:hover{
+	text-decoration: underline;
+}
+
+#fullpage .arrow-block{
+	font-family: 'open_sanslight';
+	float:right;
+	width:120px;
+	margin-top:-170px;
+	cursor: pointer;
+	margin-right:10px;
+}
+
+#fullpage .arrow-block span{
+	color:#fff;
+	font-size:20px;
+	position: relative;
+	top:17px;
+}
+
+#fullpage .arrow-block .right-arrow{
+	float:right;
+	width:64px;
+	height:64px;
+	background: url("../img/right-arrow.png") 50% 50%/cover no-repeat;
+}
+
 /*************Auth Pages*****************/
 #header{
     width:100%;

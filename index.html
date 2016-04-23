@@ -20,14 +20,26 @@
 </head>
 <body>
 	<div id="fullpage">
-		<div class="section">
+		<div class="section" data-anchor="firstPage">
 			<h1 class="main-heading">Open Source Ideas</h1>
 			<h3 class="heading2">We make your dreams come true</h3>
 			<div class="arrow"></div>
 			<span class="arrowtext">Scroll down</span>
 		</div>
-		<div class="section section2">
-			<div class="slide firstSlide">
+		<div class="section section2" data-anchor="secondPage">
+			<div class="slide" data-anchor="slide1">
+				<form>
+					<input type="text" placeholder="Email"/>
+					<input type="text" placeholder="Password"/>
+					<input type="submit" value="Login"/>
+					<a href="#"><p>Forgot a password?</p></a>
+				</form>
+				<a href="#secondPage/slide2"><div class="arrow-block">
+					<span>Back</span>
+					<div class="right-arrow"></div>
+				</div></a>
+			</div>
+			<div class="slide active" data-anchor="slide2">
 				<div class="block">
 					<div class="round round-1"></div>
 					<h3>1. Describe your idea</h3>
@@ -42,14 +54,13 @@
 				</div>
 				<h2 class="quote">"The value of an idea lies in the using of it"</h2>
 				<span class="author">-Thomas Edison</span>
-				<button class="startButton">Start Right Now</button>
+				<a href="#secondPage/slide3"><button class="startButton">Start Right Now</button></a>
 				<div class="underButton">
-					<span class="text1">Have an account? <a class="log" href="#">Log in</a> or <a href="#"><div class="facebook-icon"></div></a></span>
+					<span class="text1">Have an account? <a class="log" href="#secondPage/slide1">Log in</a> or <a href="#"><div class="facebook-icon"></div></a></span>
 				</div>
 			</div>
-			<div class="slide"> Slide 2 </div>
-			<div class="slide"> Slide 3 </div>
-			<div class="slide"> Slide 4 </div>
+			<div class="slide" data-anchor="slide3"> Slide 3 </div>
+			<div class="slide" data-anchor="slide4"> Slide 4 </div>
 		</div>
 	</div>
 
