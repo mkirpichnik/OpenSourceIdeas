@@ -351,17 +351,17 @@ a:focus{
 }
 
 .slider-item-1 {
-    background-image: url('../images/authSite/slide1.jpg');
+    background-image: url('../img/authSite/slide1.jpg');
     background-size:cover;
 }
 
 .slider-item-2 {
-    background-image: url('../images/authSite/slide2.jpg');
+    background-image: url('../img/authSite/slide2.jpg');
     background-size:cover;
 }
 
 .slider-item-3 {
-    background-image: url('../images/authSite/slide3.jpg');
+    background-image: url('../img/authSite/slide3.jpg');
     background-size:cover;
 }
 
@@ -422,7 +422,7 @@ a:focus{
 
 .slick-next{
     right:100px !important;
-    background-image: url('../images/authSite/arrow-right.png') !important;
+    background-image: url('../img/authSite/arrow-right.png') !important;
 }
 
 .slick-prev:before, .slick-next:before {
@@ -636,47 +636,47 @@ a:focus{
 .twitter:hover,
 .fb:hover,
 .vk:hover{
-   transition: all .2s ease-in-out;
+   transition: all .5s ease-in-out;
    width:32px;
    height:32px; 
 }
 
 .linkedin {
-    background-image: url('../images/authSite/socialcons/linkedin.png');
+    background-image: url('../img/authSite/socialcons/linkedin.png');
 }
 
 .linkedin:hover {
-    background-image: url('../images/authSite/socialcons/linkedinActive.png');
+    background-image: url('../img/authSite/socialcons/linkedinActive.png');
 }
 
 .googlePlus {
-    background-image: url('../images/authSite/socialcons/google.png');
+    background-image: url('../img/authSite/socialcons/google.png');
 }
 
 .googlePlus:hover {
-    background-image: url('../images/authSite/socialcons/googleActive.png');
+    background-image: url('../img/authSite/socialcons/googleActive.png');
 }
 
 .twitter {
-    background-image: url('../images/authSite/socialcons/twitter.png');
+    background-image: url('../img/authSite/socialcons/twitter.png');
 }
 
 .twitter:hover {
-    background-image: url('../images/authSite/socialcons/twitterActive.png');
+    background-image: url('../img/authSite/socialcons/twitterActive.png');
 }
 
 .fb {
-    background-image: url('../images/authSite/socialcons/fb.png');
+    background-image: url('../img/authSite/socialcons/fb.png');
 }
 
 .fb:hover {
-    background-image: url('../images/authSite/socialcons/fbActive.png');
+    background-image: url('../img/authSite/socialcons/fbActive.png');
 }
 
 .vk {
-    background-image: url('../images/authSite/socialcons/vkpng.png');
+    background-image: url('../img/authSite/socialcons/vkpng.png');
 }
 
 .vk:hover {
-    background-image: url('../images/authSite/socialcons/vkActive.png');
+    background-image: url('../img/authSite/socialcons/vkActive.png');
 }
