@@ -174,7 +174,10 @@ a:focus{
 
 #fullpage form input,
 #fullpage form input:hover,
-#fullpage form input:focus{
+#fullpage form input:focus,
+#contacts .contacts-content form input:focus,
+#contacts .contacts-content form input:hover,
+#contacts .contacts-content form input{
 	outline:0;
 }
 
@@ -781,7 +784,7 @@ a:focus{
 #about-us .our-story{
     display:block;
     width:100%;
-    margin:50px auto;
+    margin:50px auto 0 auto; 
     padding:10px 24px;
     float:left;
 }
@@ -808,11 +811,13 @@ a:focus{
 #about-us .our-story > .out-story-left > .content{
     font-size:16px;
     font-family:'open_sansregular';
+    line-height:25px;
+    text-align:center;
 } 
 
 #about-us .our-story > .out-story-right{
-    width:350px;
-    height:350px;
+    width:300px;
+    height:300px;
     background:green;
     border-radius:50%;
     display:table;
@@ -895,8 +900,65 @@ a:focus{
 }
 
 #persons .persons-wrapper .person-item > .person-social-accounts > .social-icons{
+    display:block;
     padding:0;
-    width:auto;
+    width:185px;
+    margin:0 auto;
+    float:none; 
+}
+
+#contacts{
+    width:100%;
+}
+
+#contacts .contacts-left,
+#contacts .contacts-right{
+    width:50%;
+    float:left;
+}
+
+#contacts > .contacts-left{
+
+}
+
+#contacts .contacts-title{
+    font-size:26px;
+    font-family:'open_sansbold';
+    margin-bottom:20px;
+}
+
+#contacts .contacts-content{
+    width:100%;
+}
+
+#contacts .contacts-content form{
+    width:100%;
+	/*border:1px solid #ccc;*/
+    font-size: 16px;
+    font-family:'open_sanslight';
+}
+
+#contacts .contacts-content form input,
+#contacts .contacts-content form textarea{
+    float:left;
+    display:block;
+    width:100%;
+    margin-bottom:10px;
+    padding: 10px;
+    border: 1px solid #000;
+    transition: all .3s ease-in-out;
+}
+
+#contacts .contacts-content form textarea {
+    height: 200px;
+    outline: 0;
+    resize: none;   
+}
+
+#contacts .contacts-content form input:focus,
+#contacts .contacts-content form textarea:focus{
+    box-shadow:1px 1px 3px #8e8e8e;
+    transition: all .3s ease-in-out;
 }
 
 #footer{
