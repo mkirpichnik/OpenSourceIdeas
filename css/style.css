@@ -959,7 +959,7 @@ a:focus{
 
 #contacts .contacts-left,
 #contacts .contacts-right{
-    width:50%;
+    width:45%;
     float:left;
 }
 
@@ -1007,6 +1007,37 @@ a:focus{
     transition: all .3s ease-in-out;
 }
 
+#contacts .vertical-divider{
+    height:465px;
+    margin:0 45px;
+    float:left;
+}
+
+#contacts .contacts-content ul,
+#contacts .contacts-content ul > .info-item > ul{
+    margin:0;
+    padding:0;
+}
+
+#contacts .contacts-content ul > .info-item{
+    margin-bottom:30px;
+}
+
+#contacts .contacts-content ul > .info-item > ul > li{
+    margin-bottom:5px;
+}
+
+#contacts .contacts-content ul > .info-item,
+#contacts .contacts-content ul > .info-item > ul > li{
+    list-style:none;
+    font-size: 16px;
+    font-family:'open_sanslight';
+}
+#contacts .contacts-content ul > .info-item > ul > li:first-of-type {
+    font-weight:600;
+    font-size:18px;
+}
+
 #footer{
     margin-top:70px;
     border-bottom:none;
@@ -1047,7 +1078,6 @@ a:focus{
     float:none;
     vertical-align:middle;
 }
-
 .linkedin,
 .googlePlus,
 .twitter,
