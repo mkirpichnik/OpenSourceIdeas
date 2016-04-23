@@ -199,20 +199,38 @@ a:focus{
 	color:#fff;
 }
 
-#fullpage form input[type="submit"]{
+#fullpage form .submitButton{
+	display: block;
 	font-family: 'open_sansbold';
 	width:150px;
 	height:50px;
 	background-color: transparent;
 	color:#fff;
 	border:1px solid #fff;
+	margin:0 auto;
 	margin-top:30px;
 	transition: all .2s ease-in-out;
 	font-size:18px;
+	outline:0;
+	border-radius: 5px;
+	padding:0;
 }
 
-#fullpage form input[type="submit"]:hover{
+#fullpage form .submitButton:hover{
 	background-color:#fff;
+	transition: all .2s ease-in-out;
+}
+
+#fullpage form .submitButton a{
+	display: block;
+	text-align: center;
+	transition: all .2s ease-in-out;
+	width:inherit;
+	height: inherit;
+	padding-top:12px;
+}
+
+#fullpage form .submitButton:hover a{
 	color:#000;
 	transition: all .2s ease-in-out;
 }
@@ -654,12 +672,14 @@ a:focus{
 	width:100%;
 	color:#000;
 	margin-top:-20px;
+	padding-left:7px;
 }
 
 #ideaBody .filter .date{
 	display: inline-block;
 	width:80%;
 	margin-top:10px;
+	padding-left:10px;
 }
 
 #ideaBody .filter .dateIcon{
