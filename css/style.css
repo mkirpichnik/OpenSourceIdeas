@@ -231,7 +231,49 @@ a:focus{
 	background: url("../img/right-arrow.png") 50% 50%/cover no-repeat;
 }
 
-/*************Auth Pages*****************/
+/*************Slick-Slider*****************/
+
+.slick-prev, .slick-next{
+    width:48px !important;
+    height:48px !important;
+    background:transparent !important;
+    z-index:10000 !important;
+    opacity:0.50;
+    transition: all .2s ease-in-out;
+}
+
+.slick-prev:hover, .slick-next:hover{
+    opacity:1;
+    transition: all .2s ease-in-out;
+}
+
+.slick-prev{
+    left:100px !important;
+    background-image: url('../img/authSite/arrow-left.png') !important;
+}
+
+.slick-next{
+    right:100px !important;
+    background-image: url('../img/authSite/arrow-right.png') !important;
+}
+
+.slick-prev:before, .slick-next:before {
+    content: ''!important;
+}
+
+.slick-dots{
+    bottom: 50px !important;
+}
+
+.slick-dots li button:before{
+    background:#fff !important;
+    content:'' !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius:50% !important;
+}
+
+/*************Auth Pages******************/
 /*************Auth Header*****************/
 
 #header, #footer {
@@ -259,7 +301,7 @@ a:focus{
     color: #8e8e8e;
     display: block;
     text-align: center;
-    padding: 14px 16px;
+    padding: 18px 16px 0px 16px;
     text-decoration: none;
     transition: all .2s ease-in-out; 
 }
@@ -346,7 +388,7 @@ a:focus{
 #slider-main-auth .slider-item-wrap > .slider-item{
     width:60%;
     margin:0 auto;
-    text-align:justify;
+    text-align:center;
     color:#fff;
 }
 
@@ -378,6 +420,7 @@ a:focus{
 }
 
 #slider-main-auth .slider-item-wrap > .slider-item .slider-footer > .slider-more-btn,
+
 .news-more-btn,
 .news-next-btn{
     display:block;
@@ -386,7 +429,7 @@ a:focus{
     font-weight:600; 
     text-align:center;
     margin:0 auto;
-    height: 35px;
+    height: 40px;
     width: 140px;
     color: #fff;
     background-color: transparent;
@@ -401,50 +444,10 @@ a:focus{
     background-color: #fff;
 }
 
-.slick-prev, .slick-next{
-    width:48px !important;
-    height:48px !important;
-    background:transparent !important;
-    z-index:10000 !important;
-    opacity:0.50;
-    transition: all .2s ease-in-out;
-}
-
-.slick-prev:hover, .slick-next:hover{
-    opacity:1;
-    transition: all .2s ease-in-out;
-}
-
-.slick-prev{
-    left:100px !important;
-    background-image: url('../images/authSite/arrow-left.png') !important;
-}
-
-.slick-next{
-    right:100px !important;
-    background-image: url('../img/authSite/arrow-right.png') !important;
-}
-
-.slick-prev:before, .slick-next:before {
-    content: ''!important;
-}
-
-.slick-dots{
-    bottom: 50px !important;
-}
-
-.slick-dots li button:before{
-    background:#fff !important;
-    content:'' !important;
-    width: 15px !important;
-    height: 15px !important;
-}
-
 /*************Auth Startup News*****************/
 
-#startup-news, #achievments{
+#startup-news, #achievements{
     background:#fff;
-    padding:50px 0;
 }
 
 .section-header > h2{
@@ -459,19 +462,25 @@ a:focus{
 }
 
 #startup-news .section-content .news-item{
+    /*width:348px !important;*/
     width:30%;
-    margin-right:30px;
+    margin-right: 30px;
     border:1px solid #ccc;
     min-height:580px;
     padding:25px;
     float:left;
 }
 
+/*#startup-news .section-content .news-item:nth-of-type(3n){
+    margin-right:0 !important;
+}*/
+
 #startup-news .section-content :last-child{
     margin-right:0;
 }
 
 #startup-news .section-content .news-item > .photo,
+#startup-news .section-content .news-item > .title,
 #startup-news .section-content .news-item > .content,
 #startup-news .section-content .news-item > .footer{
     margin-bottom:20px;
@@ -493,18 +502,12 @@ a:focus{
     border-radius: 3px;
 }
 
-#startup-news .section-content .news-item > .photo > .title{
-    position: absolute;
+#startup-news .section-content .news-item > .title{
     display: block;
-    z-index: 10000;
     width: 100px;
     height: 30px;
     font-family: 'open_sansbold';
-    outline: 1px solid #ccc;
-    text-align: center;
-    font-size: 20px;
-    right: 0;
-    bottom: 0;
+    font-size: 22px;
 }
 
 
@@ -539,6 +542,8 @@ a:focus{
     text-align:center;
     margin:0 auto;
     margin-top:20px;
+    font-size:16px;
+    font-family:'open_sansregular';
 }
 
 .news-next-btn{
@@ -547,23 +552,16 @@ a:focus{
     color: #000;
     text-align:left;
     width:90px !important;
-    border: 1px solid #ccc;
+    text-transform:none;
     margin-top: 20px;
     width:120px;
-    transition: all .2s ease-in-out;
     position:relative;
 }
 
 .news-next-btn > span{
     position: absolute;
-    top: 18%;
+    top: 23%;
     right: 10%;
-}
-
-.news-next-btn:hover{
-    color:#fff;
-    background:#000;
-    transition: all .2s ease-in-out;
 }
 
 .news-slider .slick-prev, 
@@ -579,15 +577,15 @@ a:focus{
     background:#000 !important;
 }
 
-#achievments .section-content .block h3{
+#achievements .section-content .block h3{
     color:#000;
 }
-#achievments .section-content .block > .round{
+#achievements .section-content .block > .round{
     border-color:#000;
     display:table;  
 }
 
-#achievments .section-content .block .round > .text{
+#achievements .section-content .block .round > .text{
     display: table-cell;
     vertical-align: middle;
     width:100%;
@@ -597,15 +595,17 @@ a:focus{
 }
 
 #footer{
+    margin-top:70px;
     border-bottom:none;
     border-top: 1px solid rgba(204, 204, 204, 0.32);
 }
 
 #footer ul{
-    display:block;
+    display:table;
     width:100%;
     margin:0;
 }
+
 #footer ul > li{
     float:left;
     list-style:none;
@@ -626,6 +626,12 @@ a:focus{
     margin-right:5px;
 }
 
+#footer  .copyriht{
+    display:table-cell;
+    float:none;
+    vertical-align:middle;
+}
+
 .linkedin,
 .googlePlus,
 .twitter,
@@ -636,9 +642,10 @@ a:focus{
 .twitter:hover,
 .fb:hover,
 .vk:hover{
-   transition: all .5s ease-in-out;
+   transition: all .3s ease-in-out;
    width:32px;
    height:32px; 
+   cursor:pointer;
 }
 
 .linkedin {
@@ -679,4 +686,12 @@ a:focus{
 
 .vk:hover {
     background-image: url('../img/authSite/socialcons/vkActive.png');
+}
+
+hr{
+    display:block;
+    max-width:1200px;
+    margin:0 auto;
+    margin-bottom:50px;
+    margin-top:50px;
 }
