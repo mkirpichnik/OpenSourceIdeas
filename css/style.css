@@ -334,6 +334,10 @@ a:focus{
 	height: 2px;
 }
 
+.four-slide form h3:last-child{
+	margin-top:10px;
+}
+
 /*************Auth Pages*****************/
 /*************Slick-Slider*****************/
 

@@ -4,5 +4,4 @@
     	   keyboardScrolling: false,
     	   controlArrows: false,
     });
-    $("#myTags").tagit();
 });
