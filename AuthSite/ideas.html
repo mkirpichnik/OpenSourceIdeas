@@ -18,55 +18,56 @@
 
 </head>
 <body id="ideaBody">
-	<header id="header">
-		<div class="container">
-			<div class="row">
-				<ul class="navigation">
-					<li class="logo image">
-						<a href="#">
-							<img src="../img/authSite/logo.png" />
-						</a>
-					</li>
-					<li><a href="#">Main</a></li>
-					<li class="active"><a href="#">Ideas</a></li>
-					<li><a href="#">About Us</a></li>
-					<li class="pull-right image-link">
-						<a href="#">
-							<div class="image image-small">
-								<img src="../img/authSite/exit.png" />
-							</div>
-							<div class="text-link text-link-under">
-								Log out
-							</div>
-						</a>
-					</li>
-					<li class="pull-right image-link">
-						<a href="#">
-							<div class="image image-small">
-								<img src="../img/authSite/User-icon.png" />
-							</div>
-							<div class="text-link text-link-under">
-								Name
-							</div>
-						</a>
-					</li>
-					<li class="vertical-divider pull-right"></li>
-					<li class="pull-right">
-						<a href="#">
-							<div class="image-link">
-								<div class="image image-horizontal">
-									<img src="../img/authSite/light1.png" />
+<section class="ideaSection">
+		<header id="header">
+			<div class="container">
+				<div class="row">
+					<ul class="navigation">
+						<li class="logo image">
+							<a href="#">
+								<img src="../img/authSite/logo.png" />
+							</a>
+						</li>
+						<li><a href="#">Main</a></li>
+						<li class="active"><a href="#">Ideas</a></li>
+						<li><a href="#">About Us</a></li>
+						<li class="pull-right image-link">
+							<a href="#">
+								<div class="image image-small">
+									<img src="../img/authSite/exit.png" />
 								</div>
-								<div class="text-link">
-									Add Idea
+								<div class="text-link text-link-under">
+									Log out
 								</div>
-							</div>
-						</a>
-					</li>
-				</ul>
+							</a>
+						</li>
+						<li class="pull-right image-link">
+							<a href="#">
+								<div class="image image-small">
+									<img src="../img/authSite/User-icon.png" />
+								</div>
+								<div class="text-link text-link-under">
+									Name
+								</div>
+							</a>
+						</li>
+						<li class="vertical-divider pull-right"></li>
+						<li class="pull-right">
+							<a href="#">
+								<div class="image-link">
+									<div class="image image-horizontal">
+										<img src="../img/authSite/light1.png" />
+									</div>
+									<div class="text-link">
+										Add Idea
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	</header>
+		</header>
 
 	<div class="my-container">
 		<div class="search-title">
@@ -265,11 +266,29 @@
 			</ul>
 		</div>
 	</footer>
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="../js/bootstrap.min.js"></script>
-	<script src="../js/main.js"></script>
+</section>
+<div class="filter">
+		<h3>Filter</h3>
+		<button id="openButton"></button>
+		<form>
+			<label onmousedown="return false" onselectstart="return false"><input type="checkbox"/>Some option</label>
+			<label onmousedown="return false" onselectstart="return false"><input type="checkbox"/>Some option</label>
+			<label onmousedown="return false" onselectstart="return false"><input type="checkbox"/>Some option</label>
+			<hr>
+			<select>
+				<option value="Option 1">Option 1</option>
+				<option value="Option 2">Option 2</option>
+				<option value="Option 3">Option 3</option>
+			</select>
+			<input class="date" type="text" />
+			<div class="dateIcon"></div>
+			<input type="submit" value="Search"/>
+		</form>
+	</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/filter.js"></script>
 </body>
 </html>

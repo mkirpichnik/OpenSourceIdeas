@@ -547,7 +547,7 @@ a:focus{
 	display: inline-block;
 	font-size:30px;
 	position: relative;
-	top:-7px;
+	top:-9px;
 	margin-left:5px;
 	margin-right:5px;
 	color:#000;
@@ -555,6 +555,119 @@ a:focus{
 
 #ideaBody .pages span:hover{
 	text-decoration: underline;
+}
+
+@keyframes moveFilter{
+	from{
+		right:0;
+	}
+	to{
+		right:-230px;
+	}
+}
+
+@keyframes moveFilter2{
+	from{
+		right:-230px;
+	}
+	to{
+		right:0;
+	}
+}
+
+#ideaBody .filter{
+	border:1px solid #000;
+	width:230px;
+	height:300px;
+	position: fixed;
+	background-color: #fff;
+	right:-230px;
+	top:30%;	
+	z-index:100;
+	animation-name:temp;
+	animation-duration: 1s;
+}
+
+#ideaBody .filter h3{
+	font-family: 'open_sanslight';
+	text-align: center;
+	color:#000;
+}
+
+#ideaBody .filter #openButton{
+	height:80px;
+	width:60px;
+	position: relative;
+	top:60px;
+	left:-60px;
+	outline: 0;
+	border:1px solid #000;
+	background: #fff url("../img/authSite/filter.png") 50% 50% no-repeat;
+}
+
+#ideaBody .filter form{
+	margin-top:-80px;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+#ideaBody .filter form input{
+	cursor: pointer;
+	margin-right:10px;
+	position: relative;
+	top:2px;
+}
+
+#ideaBody .filter form label{
+	cursor: pointer;
+	font-family: 'open_sanslight';
+	display: block;
+}
+
+#ideaBody .filter hr{
+	margin-top:15px;
+}
+
+#ideaBody .filter select{
+	font-family: 'open_sanslight';
+	display: block;
+	width:100%;
+	color:#000;
+	margin-top:-20px;
+}
+
+#ideaBody .filter .date{
+	display: inline-block;
+	width:80%;
+	margin-top:10px;
+}
+
+#ideaBody .filter .dateIcon{
+	display: inline-block;
+	width:23px;
+	height:23px;
+	background:url("../img/authSite/time.png") 50% 50%/cover no-repeat;
+	position: relative;
+	top:8px;
+}
+
+#ideaBody .filter input[type="submit"]{
+	font-family: 'open_sanslight';
+	display: block;
+	margin:0 auto;
+	margin-top:10px;
+	height:35px;
+	width:100px;
+	outline:0;
+	background-color: transparent;
+	border:1px solid black;
+	transition: all .2s ease-in-out;
+}
+
+#ideaBody .filter input[type="submit"]:hover{
+	transition: all .2s ease-in-out;
+	background-color:#000;
+	color:#fff;
 }
 
 /*************End Idea Page*****************/
