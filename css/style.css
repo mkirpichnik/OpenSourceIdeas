@@ -352,6 +352,40 @@ a:focus{
 	color:#fff;
 }
 
+#fullpage .fifth-slide{
+	font-family: 'open_sanslight';
+	color:#fff;
+}
+
+#fullpage .fifth-slide p{
+	font-size:23px;
+	margin-top:25px;
+}
+
+.success{
+	width:128px;
+	height:128px;
+	margin:0 auto;
+	margin-top:20px;
+	background:url("../img/mark.png") 50% 50%/cover no-repeat;
+}
+
+#fullpage .fifth-slide h3{
+	font-size:40px;
+}
+
+#fullpage .fifth-slide h1{
+	font-family: 'open_sansbold';
+	font-size:50px;
+}
+
+#fullpage h3.go-link{
+	width:110px;
+	margin:0 auto;
+	border-bottom:2px solid #fff;
+	font-size:70px;
+}
+
 /*************Auth Pages*****************/
 /*************Slick-Slider*****************/
 
