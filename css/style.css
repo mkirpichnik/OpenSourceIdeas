@@ -37,6 +37,12 @@ a:focus{
 	margin-top:200px;
 }
 
+.nextPage-block{
+	display: block;
+	margin:0 auto;
+	width:145px;
+}
+
 .arrowtext{
 	display: block;
 	font-family: 'open_sanslight';
