@@ -413,13 +413,19 @@ a:focus{
 	padding-top:20px;
 }
 
-#ideaBody .search-title{
+#ideaBody .search-title,
+#ideaBody .ideaBody-title{
 	display: inline-block;
 	margin-right:10px;
 	margin-bottom:30px;
 }
 
-#ideaBody .search-title span{
+#ideaBody .ideaBody-title{
+    text-transform:uppercase;
+}
+
+#ideaBody .search-title span,
+#ideaBody .ideaBody-title span{
 	font-family: 'open_sansregular';
 	font-size:40px;
 }
@@ -460,6 +466,20 @@ a:focus{
 #ideaBody .ideaBlock h3{
 	margin:0;
 	font-size:30px;
+}
+
+#ideaBody .addIdeaBlock{
+    width:100%;
+    display:block;
+    max-height:200px;
+    cursor:pointer;
+}
+
+#ideaBody .addIdeaBlock img{
+    width:130px;
+    height:auto;
+    margin:0 auto;
+    display:block;
 }
 
 .hash-block{
@@ -1208,7 +1228,6 @@ a:focus{
     max-width:400px;
     height:auto;
 }
-
 
 #footer{
     margin-top:70px;
