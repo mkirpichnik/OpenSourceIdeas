@@ -147,7 +147,7 @@ a:focus{
 /*************Auth Pages*****************/
 /*************Auth Header*****************/
 
-#header {
+#header, #footer {
     width: 100%;
     padding: 10px 20px;
     background: #f5f5f5;
@@ -291,7 +291,8 @@ a:focus{
 }
 
 #slider-main-auth .slider-item-wrap > .slider-item .slider-footer > .slider-more-btn,
-.news-more-btn{
+.news-more-btn,
+.news-next-btn{
     display:block;
     font-size: 20px;
     font-family:'open_sansregular';
@@ -354,26 +355,27 @@ a:focus{
 
 /*************Auth Startup News*****************/
 
-#startup-news{
+#startup-news, #achievments{
     background:#fff;
+    padding:50px 0;
 }
 
-#startup-news .section-header > h2{
+.section-header > h2{
     font-family:'open_sansbold';
     text-align:center;
-    margin-bottom:40px;
+    margin-bottom:50px;
 }
 
-#startup-news .section-content{
+.section-content{
     width:100%;
     padding:10px 20px;
 }
 
-#startup-news .section-content > .news-item{
+#startup-news .section-content .news-item{
     width:30%;
-    margin-right:55px;
-    outline:1px solid #ccc;
-    height:570px;
+    margin-right:30px;
+    border:1px solid #ccc;
+    min-height:580px;
     padding:25px;
     float:left;
 }
@@ -382,20 +384,20 @@ a:focus{
     margin-right:0;
 }
 
-#startup-news .section-content > .news-item > .photo,
-#startup-news .section-content > .news-item > .content,
-#startup-news .section-content > .news-item > .footer{
+#startup-news .section-content .news-item > .photo,
+#startup-news .section-content .news-item > .content,
+#startup-news .section-content .news-item > .footer{
     margin-bottom:20px;
 }
 
-#startup-news .section-content > .news-item > .photo{
+#startup-news .section-content .news-item > .photo{
     position:relative;
     width:100%;
     height:200px;
     outline:1px solid #ccc;
 }
 
-#startup-news .section-content > .news-item > .photo > img{
+#startup-news .section-content .news-item > .photo > img{
     position: absolute;
     left: 40%;
     top: 35%;
@@ -404,7 +406,22 @@ a:focus{
     border-radius: 3px;
 }
 
-#startup-news .section-content > .news-item > .content{
+#startup-news .section-content .news-item > .photo > .title{
+    position: absolute;
+    display: block;
+    z-index: 10000;
+    width: 100px;
+    height: 30px;
+    font-family: 'open_sansbold';
+    outline: 1px solid #ccc;
+    text-align: center;
+    font-size: 20px;
+    right: 0;
+    bottom: 0;
+}
+
+
+#startup-news .section-content .news-item > .content{
     font-family:'open_sansregular';
     text-align:justify;
 }
@@ -421,4 +438,158 @@ a:focus{
 .news-more-btn:hover{
     color: #fff;
     background:#000;
+}
+
+.section-footer{
+    font-family:'open_sansregular';
+    text-align:right;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.section-footer > p{
+    width:70%;
+    text-align:center;
+    margin:0 auto;
+    margin-top:20px;
+}
+
+.news-next-btn{
+    padding-left:10px;
+    margin-right: 0;
+    color: #000;
+    text-align:left;
+    width:90px !important;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    width:120px;
+    transition: all .2s ease-in-out;
+    position:relative;
+}
+
+.news-next-btn > span{
+    position: absolute;
+    top: 18%;
+    right: 10%;
+}
+
+.news-next-btn:hover{
+    color:#fff;
+    background:#000;
+    transition: all .2s ease-in-out;
+}
+
+.news-slider .slick-prev, 
+.news-slider .slick-next{
+    display:none !important;
+}
+
+.news-slider .slick-dots{
+    bottom: -75px !important;
+}
+
+.news-slider .slick-dots li button:before{
+    background:#000 !important;
+}
+
+#achievments .section-content .block h3{
+    color:#000;
+}
+#achievments .section-content .block > .round{
+    border-color:#000;
+    display:table;  
+}
+
+#achievments .section-content .block .round > .text{
+    display: table-cell;
+    vertical-align: middle;
+    width:100%;
+    text-align:center;
+    font-family:'open_sansbold';
+    font-size:36px;
+}
+
+#footer{
+    border-bottom:none;
+    border-top: 1px solid rgba(204, 204, 204, 0.32);
+}
+
+#footer ul{
+    display:block;
+    width:100%;
+    margin:0;
+}
+#footer ul > li{
+    float:left;
+    list-style:none;
+    padding:5px 24px;
+    font-size:16px;
+    font-family:'open_sansregular';
+}
+
+#footer ul > li > .social-icons{
+    margin:0;
+    width:100%;
+    float:left;
+}
+
+#footer ul > li > .social-icons > li{
+    float:right;
+    padding:0;
+    margin-right:5px;
+}
+
+.linkedin,
+.googlePlus,
+.twitter,
+.fb,
+.vk,
+.linkedin:hover,
+.googlePlus:hover,
+.twitter:hover,
+.fb:hover,
+.vk:hover{
+   transition: all .2s ease-in-out;
+   width:32px;
+   height:32px; 
+}
+
+.linkedin {
+    background-image: url('../images/authSite/socialcons/linkedin.png');
+}
+
+.linkedin:hover {
+    background-image: url('../images/authSite/socialcons/linkedinActive.png');
+}
+
+.googlePlus {
+    background-image: url('../images/authSite/socialcons/google.png');
+}
+
+.googlePlus:hover {
+    background-image: url('../images/authSite/socialcons/googleActive.png');
+}
+
+.twitter {
+    background-image: url('../images/authSite/socialcons/twitter.png');
+}
+
+.twitter:hover {
+    background-image: url('../images/authSite/socialcons/twitterActive.png');
+}
+
+.fb {
+    background-image: url('../images/authSite/socialcons/fb.png');
+}
+
+.fb:hover {
+    background-image: url('../images/authSite/socialcons/fbActive.png');
+}
+
+.vk {
+    background-image: url('../images/authSite/socialcons/vkpng.png');
+}
+
+.vk:hover {
+    background-image: url('../images/authSite/socialcons/vkActive.png');
 }
