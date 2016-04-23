@@ -2,6 +2,8 @@
 	min-width:1200px;
 }
 
+
+/*************Landing Page*****************/
 .landingBody{
 	background: url("../img/background.jpg") 50% 0%/cover no-repeat;
 	background-attachment: fixed;
@@ -247,11 +249,11 @@ a:focus{
 	top:17px;
 }
 
-.right-arrow{
+#fullpage .right-arrow{
 	background: url("../img/right-arrow.png") 50% 50%/cover no-repeat;
 }
 
-.left-arrow{
+#fullpage .left-arrow{
 	background: url("../img/left-arrow.png") 50% 50%/cover no-repeat;
 }
 
@@ -401,7 +403,51 @@ a:focus{
 	border-radius: 5px;
 }
 
+/*************End Landing Page*****************/
 
+/*************Idea Page*****************/
+#ideaBody .my-container{
+	width:1200px;
+	margin:0 auto;
+	color:#000;
+	padding-top:20px;
+}
+
+#ideaBody .search-title{
+	display: inline-block;
+	margin-right:10px;
+}
+
+#ideaBody .search-title span{
+	font-family: 'open_sansregular';
+	font-size:40px;
+}
+
+#ideaBody .right-arrow{
+	width:32px;
+	height:32px;
+	background: url("../img/authSite/right-arrow.png") 50% 50%/cover no-repeat;
+	display: inline-block;
+	margin-left:5px;
+	position: relative;
+	top:3px;
+}
+
+#ideaBody .search-field{
+	font-family: 'open_sansregular';
+	height:40px;
+	position: relative;
+	top:-8px;
+	background-color: transparent;
+	outline: 0;
+	border:1px solid #000;
+	border-radius: 10px;
+	width: 80%;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:17px;
+}
+/*************End Idea Page*****************/
 
 /*************Auth Pages*****************/
 /*************Slick-Slider*****************/
