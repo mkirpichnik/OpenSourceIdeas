@@ -332,10 +332,24 @@ a:focus{
 .underline{
 	background-color: #fff;
 	height: 2px;
+	margin-bottom:20px;
 }
 
-.four-slide form h3:last-child{
-	margin-top:10px;
+.four-slide textarea{
+	font-family: 'open_sanslight';
+	width:350px;
+	height:200px;
+	border:1px solid #fff;
+	background-color:transparent;
+	outline:0;
+	resize: none;
+	color:#fff;
+	padding:10px;
+	font-size:20px;
+}
+
+#fullpage form textarea::-webkit-input-placeholder{
+	color:#fff;
 }
 
 /*************Auth Pages*****************/
