@@ -13,9 +13,9 @@
          slidesToScroll: 3
      });
 
-     //$('#test').tagEditor({
-     //    initialTags: ['Hello', 'World', 'Example', 'Tags'],
-     //    delimiter: ', ', /* space and comma */
-     //    placeholder: 'Enter tags ...'
-     //});
+    $('.idea-tags').tagEditor({
+         initialTags: ['Hello', 'World', 'Example', 'Tags'],
+         delimiter: ', ', /* space and comma */
+         placeholder: 'Enter tags ...'
+     });
 });

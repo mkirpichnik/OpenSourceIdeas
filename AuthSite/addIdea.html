@@ -2,18 +2,18 @@
 <html>
 <head>
     <title></title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../css/bootstrap.css" rel="stylesheet" />
     <link href="../css/fonts.css" rel="stylesheet" />
+    <link href="../css/jquery.tag-editor.css" rel="stylesheet" />
     <link href="../css/style.css" rel="stylesheet" />
     <link href="../css/slick.css" rel="stylesheet" />
     <link href="../css/slick-theme.css" rel="stylesheet" />
-
 </head>
 <body>
-    
+
     <section id="addIdea">
         <header id="header">
             <div class="container">
@@ -64,6 +64,68 @@
                 </div>
             </div>
         </header>
+
+        <section id="main-idea-info">
+            <div class="container">
+                <div class="row">
+                    <div class="idea-info-left">
+                        <div class="idea-foto-wrap">
+                            <div class="idea-foto">
+                                <img src="../img/authSite/upload.png" />
+                                <h2>Upload a photo</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="idea-info-right">
+                        <div class="idea-heading">
+                            <div class="idea-title">
+                                Idea Title
+                            </div>
+                            <div class="idea-author">
+                                by author
+                            </div>
+                        </div>
+                        <div class="idea-tags-wrap">
+                            <span class="tags-title">Tags:</span>
+                            <div class="idea-tags"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr />
+
+        <section id="main-idea-other-info">
+            <div class="container">
+                <div class="row">
+                    <div class="description">
+                        <div class="section-title">
+                            <span>Description:</span>
+                        </div>
+                        <div class="section-content">
+                            <textarea placeholder="Write description for your idea"></textarea>
+                        </div>
+                    </div>
+                    <div class="idea-files-wrap">
+                        <div class="section-title">
+                            <span>Add files:</span>
+                        </div>
+                        <div class="section-content">
+                            <div class="idea-files">
+                                <div class="addFileBtn">
+                                    <div class="btn-content">
+                                        <img src="../img/authSite/plus.png" />
+                                        <span class="file-type">File</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <footer id="footer">
             <div class="container">
                 <ul>
@@ -86,6 +148,8 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="../js/slick.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.caret.min.js"></script>
+    <script src="../js/jquery.tag-editor.min.js"></script>
     <script src="../js/authPage.js"></script>
 </body>
 </html>
