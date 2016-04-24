@@ -502,13 +502,6 @@ a:focus{
     transition: all .3s ease-in-out;
 }
 
-/*#ideaBody .addIdeaBlock img{
-    width:130px;
-    height:auto;
-    margin:0 auto;
-    display:block;
-}*/
-
 .hash-block{
 	width:1000px;
 	margin-top:15px;
@@ -565,7 +558,8 @@ a:focus{
 	margin-top:20px;
 }
 
-#ideaBody .ideaBlock .ideaBlock-hover {
+#ideaBody .ideaBlock .ideaBlock-hover,
+#user-info .user-photo .userPhoto-hover {
     position:absolute;
     width:100%;
     height:100%;
@@ -578,38 +572,45 @@ a:focus{
     transition: all .3s ease-in-out;
 }
 
-#ideaBody .ideaBlock:hover .ideaBlock-hover{
+#ideaBody .ideaBlock:hover .ideaBlock-hover,
+#user-info .user-photo:hover .userPhoto-hover{
     opacity:1;
     z-index:10000;
     transition: all .3s ease-in-out;
-    padding:20px;
+    padding:15px;
 }
 
-#ideaBody .ideaBlock .ideaBlock-hover .hover-content-wrap{
+#ideaBody .ideaBlock .ideaBlock-hover .hover-content-wrap,
+#user-info .user-photo .userPhoto-hover .hover-content-wrap{
     display: block;
     margin: 0 auto;
-    width: 130px;
-    margin-top:2%;
+    width: 300px;
 }
 
-#ideaBody .ideaBlock .ideaBlock-hover .hover-content{
+#ideaBody .ideaBlock .ideaBlock-hover .hover-content,
+#user-info .user-photo .userPhoto-hover .hover-content{
     display: block;
-    width: 100px;
-    margin: 0 auto;
-    padding-left:10px;
+    width: 300px;
+    /*margin: 25% auto;*/
+    /*padding-left:10px;*/
 }
 
 
-#ideaBody .ideaBlock .ideaBlock-hover h2 {
+#ideaBody .ideaBlock .ideaBlock-hover h2,
+#user-info .user-photo .userPhoto-hover h2{
     color: #fff;
     margin:0;
     font-size: 40px;
     font-family:'open_sansregular';
+    text-align:center;
 }
 
-#ideaBody .ideaBlock .ideaBlock-hover img{
+#ideaBody .ideaBlock .ideaBlock-hover img,
+#user-info .user-photo .userPhoto-hover img{
     width: 100px;
     height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 #ideaBody .pages{
@@ -1404,11 +1405,33 @@ a:focus{
 
 #user-info .about-user > .about-item .field-value{
     font-family:'open_sansitalic';
+    cursor:pointer;
+    position:relative;
+    padding-right:30px;
+}
+
+#user-info .about-user > .about-item .field-value:after {
+    position: absolute;
+    top: 15%;
+    width: 24px;
+    height: 24px;
+    display: block;
+    right: 0;
+    opacity:0;
+    content:'';
+    background-image: url('../img/authSite/edit-small.png');
+    transition: all .3s ease-in-out;
+}
+
+#user-info .about-user > .about-item .field-value:hover:after{
+    opacity:1;
+    transition: all .3s ease-in-out;
 }
 
 #user-info .user-photo{
     width:400px;
     float:right;
+    position:relative;
 }
 
 #user-info .user-photo img{
