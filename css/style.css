@@ -1572,7 +1572,6 @@ a:focus{
 #main-idea-other-info .idea-files-wrap{
     width:100%;
     display:block;
-    margin:20px;
 }
 
 #main-idea-other-info .idea-files-wrap .idea-files{
@@ -1669,9 +1668,14 @@ a:focus{
     display: table;
     width: 100%;
     margin: 0;
+    padding:0;
 }
 
-#footer > .container > ul{
+#footer > .my-container{
+    padding-top:0;
+}
+
+#footer > .my-container > ul{
     height:60px;
 }
 
@@ -1760,4 +1764,5 @@ hr{
     margin:0 auto;
     margin-bottom:50px;
     margin-top:50px;
+    border-top:1px solid rgba(0, 0, 0, 0.16);
 }
