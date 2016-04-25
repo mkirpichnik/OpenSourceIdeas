@@ -413,7 +413,7 @@ a:focus{
 /*************End Landing Page*****************/
 
 /*************Idea Page*****************/
-#ideaBody .my-container{
+.my-container{
 	width:1200px;
 	margin:0 auto;
 	color:#000;
@@ -924,6 +924,10 @@ a:focus{
 
 /*************Auth Slider*****************/
 
+#main-auth-page .my-container{
+    padding:0;
+}
+
 #slider-main-auth{
 	min-height:60vh;
 	background:#fff;
@@ -1376,15 +1380,18 @@ a:focus{
     padding: 10px 24px;
     display:block;
     width:100%;
-    float:left;
 }
 
 #user-info .user-info-wrapper .user-info-left{
-    width:600px;
+    width:566px;
+    display:inline-block;
+    float:none;
 }
 
 #user-info .user-info-wrapper .user-info-right{
-    width:520px;
+    width:566px;
+    display:inline-block;
+    float:none;
 }
 
 #user-info .about-user,
@@ -1444,7 +1451,7 @@ a:focus{
 }
 
 #user-info .user-photo{
-    width:400px;
+    width:442px;
     float:right;
     position:relative;
     padding:10px;
@@ -1454,7 +1461,7 @@ a:focus{
 #user-info .user-photo img{
     display:block;
     margin:0 auto;
-    max-width:400px;
+    max-width:442px;
     height:auto;
 }
 
