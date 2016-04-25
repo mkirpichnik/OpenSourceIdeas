@@ -1379,6 +1379,14 @@ a:focus{
     float:left;
 }
 
+#user-info .user-info-wrapper .user-info-left{
+    width:600px;
+}
+
+#user-info .user-info-wrapper .user-info-right{
+    width:520px;
+}
+
 #user-info .about-user,
 #user-info .about-user > .about-item > ul{
     margin:0;
@@ -1417,7 +1425,7 @@ a:focus{
     padding-right:30px;
 }
 
-#user-info .about-user > .about-item .field-value:after {
+#user-info .about-user > .about-item.edit-item .field-value:after {
     position: absolute;
     top: 15%;
     width: 24px;
@@ -1430,7 +1438,7 @@ a:focus{
     transition: all .3s ease-in-out;
 }
 
-#user-info .about-user > .about-item .field-value:hover:after{
+#user-info .about-user > .about-item.edit-item .field-value:hover:after{
     opacity:1;
     transition: all .3s ease-in-out;
 }
@@ -1439,6 +1447,8 @@ a:focus{
     width:400px;
     float:right;
     position:relative;
+    padding:10px;
+    border:1px solid #ccc;
 }
 
 #user-info .user-photo img{
