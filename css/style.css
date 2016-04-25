@@ -2242,6 +2242,63 @@ a:focus{
 	list-style:none;
 }
 
+.save-cancel-panel{
+    position: fixed;
+    width: 100px;
+    height: 270px;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius:5px;
+    top: 200px;
+    right: 0;
+    padding:30px 15px;
+    box-shadow:0px 0px 2px #000;
+}
+
+.save-cancel-panel span{
+    font-family:'open_sansregular';
+    text-align:center;
+    display:block;
+    width:100%;
+    font-size:20px;
+}
+
+.save-cancel-panel .panel-block{
+    width:70px;
+    height:90px;
+    display:block;
+    border:1px solid rgba(204, 204, 204, 0.14);
+    cursor:pointer;
+    margin-bottom:30px;
+}
+
+.panel-block-image{
+    width:100%;
+    display:block;
+    height:70px;
+}
+
+.save {
+    background-image: url('../img/authSite/save.png');
+    transition: all .3s ease-in-out;
+}
+
+.save:hover {
+    background-image: url('../img/authSite/saveActive.png');
+    transition: all .3s ease-in-out;
+}
+
+.cancel {
+    background-image: url('../img/authSite/cancel.png');
+    transition: all .3s ease-in-out;
+}
+
+.cancel:hover {
+    background-image: url('../img/authSite/cancelActive.png');
+    transition: all .3s ease-in-out;
+}
+
+
 #about-us,
 #addIdea,
 #main-auth-page,
