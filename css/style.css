@@ -16,9 +16,9 @@ a:focus{
 	text-decoration: none;
 }
 
-.landinhBody a,
-.landinhBody a:hover,
-.landinhBody a:focus{
+.landingBody a,
+.landingBody a:hover,
+.landingBody a:focus{
 	color:#fff;
 	text-decoration: none;
 }
