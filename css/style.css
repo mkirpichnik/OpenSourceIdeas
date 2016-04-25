@@ -412,9 +412,8 @@ a:focus{
 
 /*************End Landing Page*****************/
 
-/*************Ideas Page*****************/
-#ideaBody .my-container,
-#ideaPage .my-container{
+/*************Idea Page*****************/
+.my-container{
 	width:1200px;
 	margin:0 auto;
 	color:#000;
@@ -1231,6 +1230,10 @@ a:focus{
 
 /*************Auth Slider*****************/
 
+#main-auth-page .my-container{
+    padding:0;
+}
+
 #slider-main-auth{
 	min-height:60vh;
 	background:#fff;
@@ -1683,7 +1686,18 @@ a:focus{
     padding: 10px 24px;
     display:block;
     width:100%;
-    float:left;
+}
+
+#user-info .user-info-wrapper .user-info-left{
+    width:566px;
+    display:inline-block;
+    float:none;
+}
+
+#user-info .user-info-wrapper .user-info-right{
+    width:566px;
+    display:inline-block;
+    float:none;
 }
 
 #user-info .about-user,
@@ -1724,7 +1738,7 @@ a:focus{
     padding-right:30px;
 }
 
-#user-info .about-user > .about-item .field-value:after {
+#user-info .about-user > .about-item.edit-item .field-value:after {
     position: absolute;
     top: 15%;
     width: 24px;
@@ -1737,21 +1751,23 @@ a:focus{
     transition: all .3s ease-in-out;
 }
 
-#user-info .about-user > .about-item .field-value:hover:after{
+#user-info .about-user > .about-item.edit-item .field-value:hover:after{
     opacity:1;
     transition: all .3s ease-in-out;
 }
 
 #user-info .user-photo{
-    width:400px;
+    width:442px;
     float:right;
     position:relative;
+    padding:10px;
+    border:1px solid #ccc;
 }
 
 #user-info .user-photo img{
     display:block;
     margin:0 auto;
-    max-width:400px;
+    max-width:442px;
     height:auto;
 }
 
@@ -1862,7 +1878,6 @@ a:focus{
 #main-idea-other-info .idea-files-wrap{
     width:100%;
     display:block;
-    margin:20px;
 }
 
 #main-idea-other-info .idea-files-wrap .idea-files{
@@ -1959,9 +1974,14 @@ a:focus{
     display: table;
     width: 100%;
     margin: 0;
+    padding:0;
 }
 
-#footer > .container > ul{
+#footer > .my-container{
+    padding-top:0;
+}
+
+#footer > .my-container > ul{
     height:60px;
 }
 
@@ -2050,4 +2070,5 @@ hr{
     margin:0 auto;
     margin-bottom:50px;
     margin-top:50px;
+    border-top:1px solid rgba(0, 0, 0, 0.16);
 }
