@@ -569,7 +569,8 @@ a:focus{
 }
 
 #ideaBody .tag,
-#ideaPage .tag{
+#ideaPage .tag,
+.tag-editor .tag-editor-tag{
 	font-family: 'open_sansregular';
 	font-size:15px;
 	padding:9px;
@@ -577,9 +578,10 @@ a:focus{
 	display: inline-block;
 	border:1px solid #000;
 	border-radius: 5px;
-	background: url("../img/authSite/commerce.png") 90% 50% no-repeat;
-	margin-right:5px;
-	margin-bottom:7px;
+	color:#000 !important;
+    background: url("../img/authSite/commerce.png") 80% 50% no-repeat !important;
+    margin-right: -5px !important;
+    margin-bottom:7px;
 	cursor: pointer;
 }
 
@@ -633,6 +635,7 @@ a:focus{
 	opacity:0;
 	z-index:-1;
 	transition: all .3s ease-in-out;
+    z-index:999;
 }
 
 .block-hover,
@@ -640,7 +643,11 @@ a:focus{
 	text-align: center;
 }
 
-.edit-block-hover-wrap:hover,
+.edit-block-hover-wrap{
+    position:relative;
+}
+
+.edit-block-hover-wrap:hover .block-hover,
 #ideaBody .ideaBlock:hover .ideaBlock-hover,
 #user-info .user-photo:hover .userPhoto-hover,
 #ideaPage .attachment:hover .block-hover{
@@ -1004,11 +1011,28 @@ a:focus{
 	width:370px;
 	border:1px solid #000;
 	border-radius: 5px;
-	margin-left:10px;
+	/*margin-left:10px;
 	margin-right:10px;
-	margin-bottom:5px;
+	margin-bottom:5px;*/
+    margin:10px;
 	vertical-align: bottom;
 	position:relative;
+}
+
+#ideaPage .attachment.attachment-edit{
+    position:relative;
+}
+
+#ideaPage .attachment.attachment-edit:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    opacity:1;
+    background-image: url('../img/authSite/delete.png');
 }
 
 #ideaPage .attachment span{
@@ -1031,6 +1055,10 @@ a:focus{
 
 .excel{
 	background: url("../img/authSite/excel.png") 50% 50% no-repeat;
+}
+
+.add-attachment {
+    background: url('../img/authSite/plusActive.png') 50% 50% no-repeat;
 }
 
 .statistics-block{
@@ -1241,9 +1269,15 @@ a:focus{
 
 #header, #footer {
 	width: 100%;
-	height:80px;
+	height:70px;
 	background: #f5f5f5;
 	border-bottom: 1px solid rgba(204, 204, 204, 0.32);
+}
+
+#header{
+    position:fixed;
+    z-index:99999;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.46);
 }
 
 #header .my-container, 
@@ -1255,12 +1289,17 @@ a:focus{
 .navigation {
 	list-style-type: none;
 	margin: 0;
-	padding: 10px 0px;
+	padding: 5px 0px;
 	overflow: hidden;
 }
 
 .navigation > li {
 	float: left;
+    margin-right:25px;
+}
+
+.navigation > li:last-of-type{
+    margin-right:0;
 }
 
 .navigation > li a {
@@ -1271,13 +1310,14 @@ a:focus{
 	text-align: center;
 	padding: 18px 16px 0 16px;
 	text-decoration: none;
-	transition: all .2s ease-in-out; 
+	transition: all .1s ease-in-out; 
 	outline:0;
 }
 
 .navigation > li a:hover {
 	color:#000;
 	transition: all .2s ease-in-out; 
+    text-decoration:none;
 }
 
 .navigation > li.active a{
@@ -1307,7 +1347,8 @@ a:focus{
 }
 
 .image-link > a:hover .text-link-under{
-	text-decoration:underline;
+	text-decoration:none;
+    border-bottom:1px solid #000;
 }
 
 .image-link .text-link{
@@ -1353,7 +1394,8 @@ a:focus{
 #slider-main-auth{
 	min-height:60vh;
 	background:#fff;
-	text-align:center;    
+	text-align:center;  
+    margin-bottom:50px;  
 }
 
 #slider-main-auth .slider-item-wrap{
@@ -1435,7 +1477,7 @@ a:focus{
 
 .section-content{
 	width:100%;
-	padding:10px 20px;
+	padding:0 20px;
 	text-align: center;
 }
 
@@ -1446,6 +1488,7 @@ a:focus{
 	min-height:580px;
 	padding:25px;
 	float:left;
+    outline:0;
 }
 
 #startup-news .section-content :last-child{
@@ -1481,12 +1524,17 @@ a:focus{
 	height: 30px;
 	font-family: 'open_sansbold';
 	font-size: 22px;
+    text-align:left;
 }
 
 
 #startup-news .section-content .news-item > .content{
 	font-family:'open_sansregular';
 	text-align:justify;
+}
+
+.news-slider{
+    margin-left:10px;
 }
 
 .news-more-btn{
@@ -1594,6 +1642,11 @@ a:focus{
 	display:block;
 	float:left;
 	width:50%;
+}
+
+#user-info #ideaBody,
+#user-info #ideaBody .my-container{
+    padding-top:0;
 }
 
 #about-us .our-story > .out-story-left{
@@ -1761,6 +1814,7 @@ a:focus{
 #contacts .contacts-content form textarea:focus{
 	box-shadow:1px 1px 3px #8e8e8e;
 	transition: all .3s ease-in-out;
+    outline:0;
 }
 
 #contacts .vertical-divider{
@@ -1801,7 +1855,7 @@ a:focus{
 }
 
 #user-info .user-info-wrapper{
-	margin: 50px auto 0 auto;
+	margin: 0 auto 0 auto;
 	padding: 10px 24px;
 	display:block;
 	width:100%;
@@ -2077,6 +2131,8 @@ a:focus{
 
 .tag-editor .tag-editor-tag.active{
 	background:rgba(220, 29, 29, 0.42) !important;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
 }
 
 .tag-editor li{
@@ -2085,9 +2141,32 @@ a:focus{
 
 .tag-editor .tag-editor-delete,
 .tag-editor .tag-editor-tag{
-	padding:5px;
-	visibility:visible !important;
+    visibility:visible !important;  
+    color:#000 !important;
 }
+
+.tag-editor .tag{
+    background: url("../img/authSite/commerce.png") 80% 50% no-repeat !important;
+    margin-right: -5px !important;
+}
+
+.tag-editor .tag-editor-delete i:before{
+        font-size: 26px;
+    color: rgba(255,255,255,1);
+    content: "×";
+    font-style: normal;
+    vertical-align: middle;
+}
+
+.tag-editor .tag-editor-delete{
+    padding: 9px;
+    color: #000 !important;
+    border: 1px solid #000;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background:#A92D2D;
+}
+
 .tag-editor .tag-editor-tag.active+.tag-editor-delete, 
 .tag-editor .tag-editor-tag.active+.tag-editor-delete i{
 	display:none;
@@ -2110,7 +2189,7 @@ a:focus{
 }
 
 #footer > .my-container > ul{
-	height:60px;
+	height:50px;
 }
 
 #footer ul > li{
@@ -2135,6 +2214,16 @@ a:focus{
 	margin-right:5px;
 	list-style:none;
 }
+
+#about-us,
+#addIdea,
+#main-auth-page,
+#ideaPage,
+#user-info,
+#ideaBody{
+    padding-top:70px;
+}
+
 
 .linkedin,
 .googlePlus,
