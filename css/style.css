@@ -482,6 +482,11 @@ a:focus{
     transition: all .3s ease-in-out;
 }
 
+
+#ideaBody .hover-content-wrap{
+	display: inline-block;
+}
+
 #ideaBody .addIdeaBlock-wrap:hover{
     background: rgba(7, 7, 7, 0.65);
     transition: all .3s ease-in-out;
@@ -572,6 +577,10 @@ a:focus{
     transition: all .3s ease-in-out;
 }
 
+#ideaBody .ideaBlock-hover{
+	text-align: center;
+}
+
 #ideaBody .ideaBlock:hover .ideaBlock-hover,
 #user-info .user-photo:hover .userPhoto-hover{
     opacity:1;
@@ -582,17 +591,17 @@ a:focus{
 
 #ideaBody .ideaBlock .ideaBlock-hover .hover-content-wrap,
 #user-info .user-photo .userPhoto-hover .hover-content-wrap{
-    display: block;
+    display: table;
     margin: 0 auto;
     width: 300px;
+    height:100%;
 }
 
 #ideaBody .ideaBlock .ideaBlock-hover .hover-content,
 #user-info .user-photo .userPhoto-hover .hover-content{
-    display: block;
+    display: table-cell;
     width: 300px;
-    /*margin: 25% auto;*/
-    /*padding-left:10px;*/
+    vertical-align: middle;
 }
 
 
@@ -681,6 +690,7 @@ a:focus{
 	z-index:100;
 	animation-name:temp;
 	animation-duration: 1s;
+	z-index: 10000;
 }
 
 #ideaBody .filter h3{
