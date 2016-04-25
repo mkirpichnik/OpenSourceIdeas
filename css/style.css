@@ -2267,7 +2267,7 @@ a:focus{
     width:70px;
     height:90px;
     display:block;
-    border:1px solid rgba(204, 204, 204, 0.14);
+    /*border:1px solid rgba(204, 204, 204, 0.14);*/
     cursor:pointer;
     margin-bottom:30px;
 }
