@@ -584,6 +584,7 @@ a:focus{
 	text-align: center;
 }
 
+.edit-block-hover-wrap:hover,
 #ideaBody .ideaBlock:hover .ideaBlock-hover,
 #user-info .user-photo:hover .userPhoto-hover,
 #ideaPage .attachment:hover .block-hover{
@@ -1759,19 +1760,26 @@ a:focus{
     padding-right:30px;
 }
 
+.editField{
+    position:relative;
+}
+
+.editField:after,
 #user-info .about-user > .about-item.edit-item .field-value:after {
+    cursor:pointer;
     position: absolute;
-    top: 15%;
+    top: 40%;
     width: 24px;
     height: 24px;
     display: block;
-    right: 0;
+    right: -30px;
     opacity:0;
     content:'';
     background-image: url('../img/authSite/edit-small.png');
     transition: all .3s ease-in-out;
 }
 
+.editField:hover:after,
 #user-info .about-user > .about-item.edit-item .field-value:hover:after{
     opacity:1;
     transition: all .3s ease-in-out;
