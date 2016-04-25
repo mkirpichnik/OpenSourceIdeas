@@ -12,7 +12,7 @@
 a,
 a:hover,
 a:focus{
-	color:#fff;
+	color:#000;
 	text-decoration: none;
 }
 
@@ -417,7 +417,7 @@ a:focus{
 	width:1200px;
 	margin:0 auto;
 	color:#000;
-	padding-top:20px;
+	padding-top:50px;
 }
 
 #ideaBody .search-title,
@@ -512,7 +512,8 @@ a:focus{
 	margin-top:15px;
 }
 
-#ideaBody .tag{
+#ideaBody .tag,
+#ideaPage .tag{
 	font-family: 'open_sansregular';
 	font-size:15px;
 	padding:9px;
@@ -777,7 +778,312 @@ a:focus{
 	color:#fff;
 }
 
-/*************End Idea Page*****************/
+/*************End Ideas Page*****************/
+
+/*************  Idea *****************/
+
+#ideaPage .ideaPhoto{
+	display: inline-block;
+	width:470px;
+	height:400px;
+	margin-left:0px;
+	border:1px solid #000;
+	background-color: white;
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+  -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+#ideaPage .infoBlock{
+	width:700px;
+	display: inline-block;
+	vertical-align: top;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+#ideaPage h1,h2,h3,h4,h5,h6{
+	margin:0;
+}
+
+#ideaPage h1{
+	font-family: 'open_sansregular';
+	text-align: center;
+	font-size: 60px;
+}
+
+#ideaPage .author-link{
+	position: relative;
+	left:100px;
+}
+
+#ideaPage h3{
+	font-family: 'open_sanslight_italic';
+	text-align: center;
+}
+
+#ideaPage h3 a{
+	display: inline-block;
+	border-bottom:1px solid black;
+}
+
+#ideaPage .hash-block{
+	width:560px;
+	margin:0 auto;
+	margin-top:30px;
+	margin-bottom:55px;
+}
+
+.point-block{
+	cursor: pointer;
+}
+
+#ideaPage .point-block{
+	float:left;
+	margin-left:50px;
+}
+
+#ideaPage .point-block .points{
+	height:55px;
+	border-radius: 10px;
+	margin:0 auto;
+	margin-bottom:5px;
+	background-color: #0F540D;
+	color:#fff;
+	font-family: 'open_sansbold';
+	font-size:25px;
+	text-align: center;
+	padding-top:10px;
+	padding-left:13px;
+	padding-right:13px;
+}
+
+#ideaPage .point-block span{ 
+	display: block;
+	width:100%;
+	text-align: center;
+	font-family: 'open_sanslight';
+	font-size:15px;
+}
+
+#ideaPage .like-block{
+	float:right;
+	margin-right:60px;
+	cursor: pointer;
+}
+
+#ideaPage .like-block:hover .like-image{
+	transition: all .2s ease-in-out;
+	opacity: .7;
+}
+
+#ideaPage .like-block span{
+	font-family: 'open_sansregular';
+	font-size:40px;
+	position: relative;
+	top:-8px;
+	right:10px;
+}
+
+.like-image{
+	transition: all .2s ease-in-out;
+	opacity: .3;
+	display: inline-block;
+	width:64px;
+	height:64px;
+	background: url("../img/authSite/like.png") 50% 50%/cover no-repeat;
+}
+
+#ideaPage .section-heading{
+	text-align: left;
+	font-size:50px;
+	margin-bottom:25px;
+	margin-top:50px;
+}
+
+#ideaPage p{
+	font-family: 'open_sansregular';
+	font-size:20px;
+	margin-left:3px;
+	margin-top:10px;
+}
+
+#ideaPage .attachments-block{
+	padding:10px;
+	padding-top:20px;
+	border:1px solid #000;
+	border-radius: 5px;
+	text-align: left;
+	margin-top:50px;
+}
+
+#ideaPage .attachment{
+	cursor: pointer;
+	display: inline-block;
+	height:370px;
+	width:370px;
+	border:1px solid #000;
+	border-radius: 5px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:5px;
+	vertical-align: bottom;
+}
+
+#ideaPage .attachment span{
+	font-family: 'open_sanslight';
+	font-size:50px;
+	display:block;
+	text-align: center;
+	margin-top:270px;
+	width:370px;
+	overflow: hidden;
+}
+
+.word{
+	background: url("../img/authSite/word.png") 50% 50% no-repeat;
+}
+
+.powerpoint{
+	background: url("../img/authSite/powerpoint.png") 50% 50% no-repeat;
+}
+
+.excel{
+	background: url("../img/authSite/excel.png") 50% 50% no-repeat;
+}
+
+.statistics-block{
+	margin-bottom:10px;
+}
+
+.statistic{
+	height:500px;
+	display: inline-block;
+	width:597px;
+}
+
+.chart-heading{
+	vertical-align: top;
+	width:597px;
+	text-align: center;
+	display: inline-block;
+	padding:10px;
+	font-family: 'open_sansregular';
+	font-size:30px;
+	word-wrap: break-word;
+	margin-top:30px;
+}
+
+.s-image1{
+	background: url("../img/authSite/statistic1.png") 50% 50% no-repeat;
+}
+
+.s-image2{
+	background: url("../img/authSite/statistics2.png") 50% 50% no-repeat;
+}
+
+#ideaPage .comment{
+	border:1px solid #000;
+	border-radius: 5px;
+	padding:10px;
+	padding-left:20px;
+	padding-right:20px;
+	margin-bottom:20px;
+}
+
+#ideaPage .comment .user{
+	width:100px;
+	text-align: center;
+	display: inline-block;
+	margin-right:20px;
+	padding-top:12px;
+}
+
+#ideaPage .comment .user span{
+	display: block;
+	font-family: 'open_sansregular';
+	font-size:20px;
+	margin-top:10px;
+}
+
+#ideaPage .comment .image-container{
+	width: 100px;
+	height:100px;
+	border-radius: 50%;
+	border:1px solid #000;
+	text-align: center;
+	overflow: hidden;
+}
+
+#ideaPage .comment .image-container img{
+	display: block;
+	width:inherit;
+}
+
+#ideaPage .comment .comment-part{
+	display: inline-block;
+	vertical-align: top;
+	width:1030px;
+}
+
+#ideaPage .comment .comment-heading{
+	font-family: 'open_sansregular';
+}
+
+#ideaPage .comment .comment-text{
+	font-family: 'open_sanslight';
+	font-size:18px;
+	margin-top:-5px;
+	margin-bottom:30px;
+}
+
+#ideaPage .comment .button-field{
+	display: block;
+	text-align: right;
+}
+
+#ideaPage .comment .reply-button{
+	width:130px;
+	height:45px;
+	outline:0;
+	font-family: 'open_sansbold';
+	border:1px solid #000;
+	background-color:transparent;
+	font-size:20px;
+	margin-bottom:10px;
+	transition: all .2s ease-in-out;
+}
+
+#ideaPage .comment .reply-button:hover{
+	background-color:#000;
+	color:#fff;
+	transition: all .2s ease-in-out;
+}
+
+#ideaPage .reply{
+	width:800px;
+	position: relative;
+	left:400px;
+}
+
+#ideaPage .reply .comment-part{
+	max-width:630px;
+}
+
+#ideaPage .reply-block textarea{
+	width:100%;
+	margin-bottom:20px;
+	resize: none;
+	border:1px solid #000;
+	border-radius: 5px;
+	font-family: 'open_sanslight';
+	font-size:18px;
+	padding:10px;
+	outline:0;
+}
+
+/*************End Idea*****************/
+
 
 /*************Auth Pages*****************/
 /*************Slick-Slider*****************/
