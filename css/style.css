@@ -709,6 +709,7 @@ a:focus{
 	animation-name:temp;
 	animation-duration: 1s;
 	z-index: 10000;
+	padding-top:20px;
 }
 
 #ideaBody .filter h3{
