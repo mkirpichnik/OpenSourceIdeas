@@ -569,8 +569,7 @@ a:focus{
 }
 
 #ideaBody .tag,
-#ideaPage .tag,
-.tag-editor .tag-editor-tag{
+#ideaPage .tag{
 	font-family: 'open_sansregular';
 	font-size:15px;
 	padding:9px;
@@ -579,8 +578,8 @@ a:focus{
 	border:1px solid #000;
 	border-radius: 5px;
 	color:#000 !important;
-    background: url("../img/authSite/commerce.png") 80% 50% no-repeat !important;
-    margin-right: -5px !important;
+    background: url("../img/authSite/commerce.png") 90% 50% no-repeat !important;
+    margin-right: 5px;
     margin-bottom:7px;
 	cursor: pointer;
 }
