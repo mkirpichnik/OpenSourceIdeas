@@ -564,6 +564,7 @@ a:focus{
 	margin-top:20px;
 }
 
+.block-hover,
 #ideaBody .ideaBlock .ideaBlock-hover,
 #user-info .user-photo .userPhoto-hover {
     position:absolute;
@@ -578,18 +579,20 @@ a:focus{
     transition: all .3s ease-in-out;
 }
 
+.block-hover,
 #ideaBody .ideaBlock-hover{
 	text-align: center;
 }
 
 #ideaBody .ideaBlock:hover .ideaBlock-hover,
-#user-info .user-photo:hover .userPhoto-hover{
+#user-info .user-photo:hover .userPhoto-hover,
+#ideaPage .attachment:hover .block-hover{
     opacity:1;
     z-index:10000;
     transition: all .3s ease-in-out;
     padding:15px;
 }
-
+.block-hover .hover-content-wrap,
 #ideaBody .ideaBlock .ideaBlock-hover .hover-content-wrap,
 #user-info .user-photo .userPhoto-hover .hover-content-wrap{
     display: table;
@@ -598,6 +601,7 @@ a:focus{
     height:100%;
 }
 
+.block-hover .hover-content,
 #ideaBody .ideaBlock .ideaBlock-hover .hover-content,
 #user-info .user-photo .userPhoto-hover .hover-content{
     display: table-cell;
@@ -606,6 +610,7 @@ a:focus{
 }
 
 
+.block-hover h2,
 #ideaBody .ideaBlock .ideaBlock-hover h2,
 #user-info .user-photo .userPhoto-hover h2{
     color: #fff;
@@ -615,12 +620,17 @@ a:focus{
     text-align:center;
 }
 
+.block-hover img,
 #ideaBody .ideaBlock .ideaBlock-hover img,
 #user-info .user-photo .userPhoto-hover img{
     width: 100px;
     height: auto;
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
     display: block;
+}
+
+.block-hover span{
+    display:inline !important;
 }
 
 #ideaBody .pages{
@@ -928,6 +938,7 @@ a:focus{
 	margin-right:10px;
 	margin-bottom:5px;
 	vertical-align: bottom;
+    position:relative;
 }
 
 #ideaPage .attachment span{
