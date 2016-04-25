@@ -1441,6 +1441,13 @@ a:focus{
 	padding:0;
 }
 
+#main-auth-page button > a{
+    color:inherit;
+    outline:0;
+    width:100%;
+    display:inline-block;
+}
+
 #slider-main-auth{
 	min-height:60vh;
 	background:#fff;
