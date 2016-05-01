@@ -8,136 +8,208 @@
     <link href="../css/fonts.css" rel="stylesheet" />
     <link href="../css/style.css" rel="stylesheet" />
     <link href="../css/slick.css" rel="stylesheet" />
-    <link href="../css/slick-theme.css" rel="stylesheet" />
+    <link href="../css/slick-theme.css" rel="stylesheet"/>
+    <link href="../css/material-kit.css" rel="stylesheet" />
+    <link href="../css/material-edit.css" rel="stylesheet" />
     <title>OpenSourceIdeas | UserPage</title>
 </head>
 <body>
     <header id="header">
-        <div class="my-container">
-            <ul class="navigation">
-                <li class="logo image">
-                    <a href="main.html">
-                        <img src="../img/authSite/logo.png" />
-                    </a>
-                </li>
-                <li><a href="main.html">Main</a></li>
-                <li><a href="ideas.html">Ideas</a></li>
-                <li><a href="aboutUs.html">About Us</a></li>
-                <li class="pull-right image-link">
-                    <a href="../index.html">
-                        <div class="image image-small">
-                            <img src="../img/authSite/exit.png" />
-                        </div>
-                        <div class="text-link text-link-under">
-                            Log out
-                        </div>
-                    </a>
-                </li>
-                <li class="pull-right image-link active">
-                    <a href="userEdit.html">
-                        <div class="image image-small">
-                            <img src="../img/authSite/User-icon.png" />
-                        </div>
-                        <div class="text-link text-link-under">
-                            Name
-                        </div>
-                    </a>
-                </li>
-                <li class="vertical-divider pull-right"></li>
-                <li class="pull-right">
-                    <a href="addIdea.html">
-                        <div class="image-link">
-                            <div class="image image-horizontal">
-                                <img src="../img/authSite/light1.png" />
+        <nav class="navbar" role="navigation">
+            <div class="my-container">
+                <ul class="nav navbar-nav navigation">
+                    <li class="logo image">
+                        <a href="main.html">
+                            <img src="../img/authSite/logo1.png" />
+                        </a>
+                    </li>
+                    <li class="active"><a href="main.html">Main</a></li>
+                    <li><a href="ideas.html">Ideas</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li class="pull-right image-link">
+                        <a href="../index.html">
+                            <div class="image image-small">
+                                <img src="../img/authSite/exit.png" />
                             </div>
-                            <div class="text-link">
-                                Add Idea
+                            <div class="text-link text-link-under">
+                                Log out
                             </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
+                        </a>
+                    </li>
+                    <li class="pull-right image-link">
+                        <a href="userEdit.html">
+                            <div class="image image-small">
+                                <img src="../img/authSite/User-icon.png" />
+                            </div>
+                            <div class="text-link text-link-under">
+                                Name
+                            </div>
+                        </a>
+                    </li>
+                    <li class="vertical-divider pull-right"></li>
+                    <li class="pull-right">
+                        <a href="addIdea.html">
+                            <div class="image-link">
+                                <div class="image image-horizontal">
+                                    <img src="../img/authSite/light1.png" />
+                                </div>
+                                <div class="text-link">
+                                    Add Idea
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <section id="user-info">
 
-        <div class="my-container">
-            <div class="user-info-wrapper">
-                <div class="user-info-left">
-                    <ul class="about-user">
-                        <li class="about-item edit-item">
-                            <ul>
-                                <li class="field-type">Name:</li>
-                                <li class="field-value">Yuriy</li>
-                            </ul>
-                        </li>
-                        <li class="about-item edit-item">
-                            <ul>
-                                <li class="field-type">Surname:</li>
-                                <li class="field-value">Ivanskyi</li>
-                            </ul>
-                        </li>
-                        <li class="about-item edit-item">
-                            <ul>
-                                <li class="field-type">Age:</li>
-                                <li class="field-value">18</li>
-                            </ul>
-                        </li>
-                        <li class="about-item edit-item">
-                            <ul>
-                                <li class="field-type">City:</li>
-                                <li class="field-value">Gorodok</li>
-                            </ul>
-                        </li>
-                        <li class="about-item edit-item">
-                            <ul>
-                                <li class="field-type">Email:</li>
-                                <li class="field-value">yura@gmail.com</li>
-                            </ul>
-                        </li>
-                        <li class="about-item edit-item">
-                            <ul>
-                                <li class="field-type">Facebook:</li>
-                                <li class="field-value">https://www.facebook.com/yuriy.ivanskyi</li>
-                            </ul>
-                        </li>
-
-                        <li class="about-item edit-item">
-                            <ul>
-                                <li class="field-type">Skype:</li>
-                                <li class="field-value">amfibia1111</li>
-                            </ul>
-                        </li>
-                    </ul>
+<section id="user-info">
+        <div class="main main-raised">
+            <div class="my-container">
+                <div class="edit">
+                    <img src="../img/authSite/edit-small.png" />
                 </div>
-                <div class="user-info-right">
-                    <div class="user-photo">
-                        <img src="../img/authSite/User-icon-large.png" />
-                        <div class="userPhoto-hover">
-                            <div class="hover-content-wrap">
-                                <div class="hover-content">
-                                    <span>
-                                        <img src="../img/authSite/edit.png" />
-                                    </span>
-                                    <h2>Edit</h2>
+                <!--<div class="user-info-wrapper">
+                    <div class="user-info-left">
+                        <ul class="about-user">
+                            <li class="about-item edit-item">
+                                <ul>
+                                    <li class="field-type">Name:</li>
+                                    <li class="field-value">Yuriy</li>
+                                </ul>
+                            </li>
+                            <li class="about-item edit-item">
+                                <ul>
+                                    <li class="field-type">Surname:</li>
+                                    <li class="field-value">Ivanskyi</li>
+                                </ul>
+                            </li>
+                            <li class="about-item edit-item">
+                                <ul>
+                                    <li class="field-type">Age:</li>
+                                    <li class="field-value">18</li>
+                                </ul>
+                            </li>
+                            <li class="about-item edit-item">
+                                <ul>
+                                    <li class="field-type">City:</li>
+                                    <li class="field-value">Gorodok</li>
+                                </ul>
+                            </li>
+                            <li class="about-item edit-item">
+                                <ul>
+                                    <li class="field-type">Email:</li>
+                                    <li class="field-value">yura@gmail.com</li>
+                                </ul>
+                            </li>
+                            <li class="about-item edit-item">
+                                <ul>
+                                    <li class="field-type">Facebook:</li>
+                                    <li class="field-value">https://www.facebook.com/yuriy.ivanskyi</li>
+                                </ul>
+                            </li>
+
+                            <li class="about-item edit-item">
+                                <ul>
+                                    <li class="field-type">Skype:</li>
+                                    <li class="field-value">amfibia1111</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="user-info-right">
+                        <div class="user-photo">
+                            <img src="../img/authSite/User-icon-large.png"/>
+                            <div class="userPhoto-hover">
+                                <div class="hover-content-wrap">
+                                    <div class="hover-content">
+                                        <span>
+                                            <img src="../img/authSite/edit.png" />
+                                        </span>
+                                        <h2>Edit</h2>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>-->
+                <div class="col-md-12">
+
+                    <div class="col-md-8">
+                        <h2>Yuriy Ivanskyi</h2>
+                        <p><strong>Position: </strong> Web-designer.
+                        </p>
+                        <p><strong>Hobby: </strong> Books, nature, leisure, Web design, design, layout
+                        </p>
+                        <p><strong>Age: </strong>18
+                        </p>
+                        <p>
+                            <strong>City: </strong> Gorodok
+                        </p>
+                        <p>
+                            <strong>Email: </strong>yura@gmail.com
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <figure>
+                            <img src="../img/authSite/christian.jpg" class="img-circle img-raised"/>
+                            <figcaption class="ratings">
+                                <p>
+                                    <a href="#">
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="fa fa-star-o"></span>
+                                    </a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-12 divider text-center">
+                    <div class="col-md-4 emphasis">
+                        <h2><strong> 32,4K </strong>
+                        </h2>
+                        <p>Ideas</p>
+                    </div>
+                    <div class="col-md-4 emphasis">
+                        <h2><strong>723</strong>
+                        </h2>
+                        <p>Successful</p>
+                    </div>
+                    <div class="col-md-4 emphasis">
+                        <h2><strong>74</strong>
+                        </h2>
+                        <p>Fails</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <hr />
 
         <section id="ideaBody">
             <div class="my-container">
                 <div class="ideaBody-title">
                     <span>Ideas:</span>
+                    <br />
+                    <button class="btn btn-warning btn-raised">Add idea</button>
                 </div>
-                <a href="ideaEdit.html">
-                    <div class="ideaBlock">
-                        <h3>Title</h3>
+                <div class="panel panel-warning ideaBlock">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h4>Title</h4>
+                        </div>
+                    </div>
+                    <div class="panel-body">
                         <div class="point-block">
                             <div class="points">45</div>
                             <span>Points</span>
@@ -150,83 +222,18 @@
                             <div class="tag">#tag</div>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, eveniet rem, voluptates esse ex id officia enim aspernatur similique nihil error, dolorum ab necessitatibus earum fuga pariatur! Asperiores provident earum enim, a tenetur nam ipsa neque esse optio nostrum eius fugit dicta, natus voluptate necessitatibus iusto explicabo autem deserunt harum.</p>
-                        <div class="ideaBlock-hover">
-                            <div class="hover-content-wrap">
-                                <div class="hover-content">
-                                    <span>
-                                        <img src="../img/authSite/edit.png" />
-                                    </span>
-                                    <h2>Edit</h2>
-                                </div>
-                            </div>
-                        </div>
+                        <a href="idea.html">
+                            <button class="btn btn-warning btn-raised btn-read-more">Edit</button>
+                        </a>
+                        <a href="idea.html">
+                            <button class="btn btn-danger btn-raised btn-read-more">Delete</button>
+                        </a>
                     </div>
-                </a>
-                <a href="ideaEdit.html">
-                    <div class="ideaBlock">
-                        <h3>Title</h3>
-                        <div class="point-block">
-                            <div class="points">45</div>
-                            <span>Points</span>
-                        </div>
-                        <div class="hash-block">
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, eveniet rem, voluptates esse ex id officia enim aspernatur similique nihil error, dolorum ab necessitatibus earum fuga pariatur! Asperiores provident earum enim, a tenetur nam ipsa neque esse optio nostrum eius fugit dicta, natus voluptate necessitatibus iusto explicabo autem deserunt harum.</p>
-                        <div class="ideaBlock-hover">
-                            <div class="hover-content-wrap">
-                                <div class="hover-content">
-                                    <span>
-                                        <img src="../img/authSite/edit.png" />
-                                    </span>
-                                    <h2>Edit</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="ideaEdit.html">
-                    <div class="ideaBlock">
-                        <h3>Title</h3>
-                        <div class="point-block">
-                            <div class="points">45</div>
-                            <span>Points</span>
-                        </div>
-                        <div class="hash-block">
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, eveniet rem, voluptates esse ex id officia enim aspernatur similique nihil error, dolorum ab necessitatibus earum fuga pariatur! Asperiores provident earum enim, a tenetur nam ipsa neque esse optio nostrum eius fugit dicta, natus voluptate necessitatibus iusto explicabo autem deserunt harum.</p>
-                        <div class="ideaBlock-hover">
-                            <div class="hover-content-wrap">
-                                <div class="hover-content">
-                                    <span>
-                                        <img src="../img/authSite/edit.png" />
-                                    </span>
-                                    <h2>Edit</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="addIdea.html">
-                    <div class="ideaBlock addIdeaBlock-wrap">
-                        <div class="addIdeaBlock">
-                            <!--<img src="../img/authSite/plus.png" />-->
-                        </div>
-                    </div>
-                </a>
+                </div>
 
             </div>
         </section>
-
+        </div>
         <footer id="footer">
             <div class="my-container">
                 <ul>
@@ -245,21 +252,12 @@
         </footer>
     </section>
 
-    <div class="save-cancel-panel">
-        <div class="panel-block">
-            <div class="panel-block-image save"></div>
-            <span>Save</span>
-        </div>
-        <div class="panel-block">
-            <div class="panel-block-image cancel"></div>
-            <span>Cancel</span>
-        </div>
-    </div>
-
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="../js/slick.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+    <script src="../js/material.min.js"></script>
+    <script src="../js/material-kit.js"></script>	
     <script src="../js/authPage.js"></script>
 </body>
 </html>

@@ -10,58 +10,63 @@
     <link href="../css/jquery.tag-editor.css" rel="stylesheet" />
     <link href="../css/style.css" rel="stylesheet" />
     <link href="../css/slick.css" rel="stylesheet" />
-    <link href="../css/slick-theme.css" rel="stylesheet" />
+    <link href="../css/slick-theme.css" rel="stylesheet"/>
+    <link href="../css/material-kit.css" rel="stylesheet" />
+    <link href="../css/material-edit.css" rel="stylesheet" />
 </head>
 <body>
     <header id="header">
-        <div class="my-container">
-            <ul class="navigation">
-                <li class="logo image">
-                    <a href="main.html">
-                        <img src="../img/authSite/logo.png" />
-                    </a>
-                </li>
-                <li><a href="main.html">Main</a></li>
-                <li><a href="ideas.html">Ideas</a></li>
-                <li><a href="aboutUs.html">About Us</a></li>
-                <li class="pull-right image-link">
-                    <a href="../index.html">
-                        <div class="image image-small">
-                            <img src="../img/authSite/exit.png" />
-                        </div>
-                        <div class="text-link text-link-under">
-                            Log out
-                        </div>
-                    </a>
-                </li>
-                <li class="pull-right image-link">
-                    <a href="userEdit.html">
-                        <div class="image image-small">
-                            <img src="../img/authSite/User-icon.png" />
-                        </div>
-                        <div class="text-link text-link-under">
-                            Name
-                        </div>
-                    </a>
-                </li>
-                <li class="vertical-divider pull-right"></li>
-                <li class="pull-right active">
-                    <a href="addIdea.html">
-                        <div class="image-link">
-                            <div class="image image-horizontal">
-                                <img src="../img/authSite/light1.png" />
+        <nav class="navbar" role="navigation">
+            <div class="my-container">
+                <ul class="nav navbar-nav navigation">
+                    <li class="logo image">
+                        <a href="main.html">
+                            <img src="../img/authSite/logo1.png" />
+                        </a>
+                    </li>
+                    <li class="active"><a href="main.html">Main</a></li>
+                    <li><a href="ideas.html">Ideas</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li class="pull-right image-link">
+                        <a href="../index.html">
+                            <div class="image image-small">
+                                <img src="../img/authSite/exit.png" />
                             </div>
-                            <div class="text-link">
-                                Add Idea
+                            <div class="text-link text-link-under">
+                                Log out
                             </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
+                        </a>
+                    </li>
+                    <li class="pull-right image-link">
+                        <a href="userEdit.html">
+                            <div class="image image-small">
+                                <img src="../img/authSite/User-icon.png" />
+                            </div>
+                            <div class="text-link text-link-under">
+                                Name
+                            </div>
+                        </a>
+                    </li>
+                    <li class="vertical-divider pull-right"></li>
+                    <li class="pull-right">
+                        <a href="addIdea.html">
+                            <div class="image-link">
+                                <div class="image image-horizontal">
+                                    <img src="../img/authSite/light1.png" />
+                                </div>
+                                <div class="text-link">
+                                    Add Idea
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <section id="ideaPage">
+<section id="ideaPage">
+    <div class="main main-raised">
         <div class="my-container">
             <div class="ideaPhoto">
                 <div class="idea-foto-wrap">
@@ -73,7 +78,9 @@
             </div>
             <div class="infoBlock">
                 <h1>Title</h1>
-                <h3 class="author-link">by <a href="user.html">author</a></h3>
+                <h3 class="author-link">
+                    by <a href="user.html">author</a>
+                </h3>
                 <div class="hash-block">
                     <div class="idea-tags-empty"></div>
                 </div>
@@ -87,32 +94,34 @@
             <div class="attachments-block">
                 <div class="add-attachment attachment">
                     <span>Add</span>
-                </div>  
+                </div>
             </div>
         </div>
-
-        <footer id="footer">
-            <div class="my-container">
-                <ul>
-                    <li>All rights reserved &copy; 2016</li>
-                    <li>
-                        <ul class="social-icons">
-                            <li class="linkedin"></li>
-                            <li class="googlePlus"></li>
-                            <li class="twitter"></li>
-                            <li class="fb"></li>
-                            <li class="vk"></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </section>
+    </div>
+    <footer id="footer">
+        <div class="my-container">
+            <ul>
+                <li>All rights reserved &copy; 2016</li>
+                <li>
+                    <ul class="social-icons">
+                        <li class="linkedin"></li>
+                        <li class="googlePlus"></li>
+                        <li class="twitter"></li>
+                        <li class="fb"></li>
+                        <li class="vk"></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</section>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="../js/slick.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+    <script src="../js/material.min.js"></script>
+    <script src="../js/material-kit.js"></script>	
     <script src="../js/jquery.caret.min.js"></script>
     <script src="../js/jquery.tag-editor.min.js"></script>
     <script src="../js/authPage.js"></script>

@@ -14,71 +14,113 @@
     <!-- Fonts -->
     <link href="../css/fonts.css" rel="stylesheet">
 
+    <link href="../css/material-kit.css" rel="stylesheet" />
+    <link href="../css/material-edit.css" rel="stylesheet" />
+
     <!-- Other -->
 
 </head>
 <body>
     <header id="header">
-        <div class="my-container">
-            <ul class="navigation">
-                <li class="logo image">
-                    <a href="main.html">
-                        <img src="../img/authSite/logo.png" />
-                    </a>
-                </li>
-                <li><a href="main.html">Main</a></li>
-                <li class="active"><a href="ideas.html">Ideas</a></li>
-                <li><a href="aboutUs.html">About Us</a></li>
-                <li class="pull-right image-link">
-                    <a href="../index.html">
-                        <div class="image image-small">
-                            <img src="../img/authSite/exit.png" />
-                        </div>
-                        <div class="text-link text-link-under">
-                            Log out
-                        </div>
-                    </a>
-                </li>
-                <li class="pull-right image-link">
-                    <a href="userEdit.html">
-                        <div class="image image-small">
-                            <img src="../img/authSite/User-icon.png" />
-                        </div>
-                        <div class="text-link text-link-under">
-                            Name
-                        </div>
-                    </a>
-                </li>
-
-                <li class="vertical-divider pull-right"></li>
-                <li class="pull-right">
-                    <a href="addIdea.html">
-                        <div class="image-link">
-                            <div class="image image-horizontal">
-                                <img src="../img/authSite/light1.png" />
-                            </div>
-                            <div class="text-link">
-                                Add Idea
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </header>
-
-    <div id="ideaBody">
-        <section class="ideaSection">
-
+        <nav class="navbar" role="navigation">
             <div class="my-container">
+                <ul class="nav navbar-nav navigation">
+                    <li class="logo image">
+                        <a href="main.html">
+                            <img src="../img/authSite/logo1.png" />
+                        </a>
+                    </li>
+                    <li><a href="main.html">Main</a></li>
+                    <li class="active"><a href="ideas.html">Ideas</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li class="pull-right image-link">
+                        <a href="../index.html">
+                            <div class="image image-small">
+                                <img src="../img/authSite/exit.png" />
+                            </div>
+                            <div class="text-link text-link-under">
+                                Log out
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pull-right image-link">
+                        <a href="userEdit.html">
+                            <div class="image image-small">
+                                <img src="../img/authSite/User-icon.png" />
+                            </div>
+                            <div class="text-link text-link-under">
+                                Name
+                            </div>
+                        </a>
+                    </li>
+                    <li class="vertical-divider pull-right"></li>
+                    <li class="pull-right">
+                        <a href="addIdea.html">
+                            <div class="image-link">
+                                <div class="image image-horizontal">
+                                    <img src="../img/authSite/light1.png" />
+                                </div>
+                                <div class="text-link">
+                                    Add Idea
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<div id="ideaBody">
+    <div class="main main-raised">
+
+        <section class="ideaSection">
+            <div class="my-container">
+                <div class="section-header">
+                    <h2>Users Ideas</h2>
+                </div>
                 <div class="search-title">
                 </div>
                 <input class="search-field" />
                 <button class="search-button">Search</button>
 
-                <a href="idea.html">
-                    <div class="ideaBlock">
-                        <h3>Title</h3>
+                <!--<div class="input-group">
+                    <input type="search" class="form-control" placeholder="Input your text for search"/>
+                    <span class="input-group-btn">
+                        <button class="btn btn-warning btn-raised" type="button">Search</button>
+                    </span>
+                </div>-->
+                <!--<div class="ideaBlock">
+                    <h3>Title</h3>
+                    <div class="point-block">
+                        <div class="points">45</div>
+                        <span>Points</span>
+                    </div>
+                    <div class="hash-block">
+                        <div class="tag">#tag</div>
+                        <div class="tag">#tag</div>
+                        <div class="tag">#tag</div>
+                        <div class="tag">#tag</div>
+                        <div class="tag">#tag</div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, eveniet rem, voluptates esse ex id officia enim aspernatur similique nihil error, dolorum ab necessitatibus earum fuga pariatur! Asperiores provident earum enim, a tenetur nam ipsa neque esse optio nostrum eius fugit dicta, natus voluptate necessitatibus iusto explicabo autem deserunt harum.</p>
+                    <div class="ideaBlock-hover">
+                        <div class="hover-content-wrap">
+                            <div class="hover-content">
+                                <span>
+                                        <img src="../img/authSite/readMore.png" />
+                                    </span>
+                                <h2>Read More</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                <div class="panel panel-warning ideaBlock">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h4>Title</h4>
+                        </div>
+                    </div>
+                    <div class="panel-body">
                         <div class="point-block">
                             <div class="points">45</div>
                             <span>Points</span>
@@ -91,22 +133,19 @@
                             <div class="tag">#tag</div>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, eveniet rem, voluptates esse ex id officia enim aspernatur similique nihil error, dolorum ab necessitatibus earum fuga pariatur! Asperiores provident earum enim, a tenetur nam ipsa neque esse optio nostrum eius fugit dicta, natus voluptate necessitatibus iusto explicabo autem deserunt harum.</p>
-                        <div class="ideaBlock-hover">
-                            <div class="hover-content-wrap">
-                                <div class="hover-content">
-                                    <span>
-                                        <img src="../img/authSite/readMore.png" />
-                                    </span>
-                                    <h2>Read More</h2>
-                                </div>
-                            </div>
+                        <a href="idea.html">
+                            <button class="btn btn-warning btn-raised btn-read-more">Read More</button>
+                        </a>
+                    </div>
+                </div>
+                <hr />
+                <div class="panel panel-warning ideaBlock">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h4>Title</h4>
                         </div>
                     </div>
-                </a>
-
-                <a href="idea.html">
-                    <div class="ideaBlock">
-                        <h3>Title</h3>
+                    <div class="panel-body">
                         <div class="point-block">
                             <div class="points">45</div>
                             <span>Points</span>
@@ -119,244 +158,64 @@
                             <div class="tag">#tag</div>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, eveniet rem, voluptates esse ex id officia enim aspernatur similique nihil error, dolorum ab necessitatibus earum fuga pariatur! Asperiores provident earum enim, a tenetur nam ipsa neque esse optio nostrum eius fugit dicta, natus voluptate necessitatibus iusto explicabo autem deserunt harum.</p>
-                        <div class="ideaBlock-hover">
-                            <div class="hover-content-wrap">
-                                <div class="hover-content">
-                                    <span>
-                                        <img src="../img/authSite/readMore.png" />
-                                    </span>
-                                    <h2>Read More</h2>
-                                </div>
-                            </div>
-                        </div>
+                        <a href="idea.html">
+                            <button class="btn btn-warning btn-raised btn-read-more">Read More</button>
+                        </a>
                     </div>
-                </a>
-
-                <a href="idea.html">
-                    <div class="ideaBlock">
-                        <h3>Title</h3>
-                        <div class="point-block">
-                            <div class="points">45</div>
-                            <span>Points</span>
-                        </div>
-                        <div class="hash-block">
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, eveniet rem, voluptates esse ex id officia enim aspernatur similique nihil error, dolorum ab necessitatibus earum fuga pariatur! Asperiores provident earum enim, a tenetur nam ipsa neque esse optio nostrum eius fugit dicta, natus voluptate necessitatibus iusto explicabo autem deserunt harum.</p>
-                        <div class="ideaBlock-hover">
-                            <div class="hover-content-wrap">
-                                <div class="hover-content">
-                                    <span>
-                                        <img src="../img/authSite/readMore.png" />
-                                    </span>
-                                    <h2>Read More</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="idea.html">
-                    <div class="ideaBlock">
-                        <h3>Title</h3>
-                        <div class="point-block">
-                            <div class="points">45</div>
-                            <span>Points</span>
-                        </div>
-                        <div class="hash-block">
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, eveniet rem, voluptates esse ex id officia enim aspernatur similique nihil error, dolorum ab necessitatibus earum fuga pariatur! Asperiores provident earum enim, a tenetur nam ipsa neque esse optio nostrum eius fugit dicta, natus voluptate necessitatibus iusto explicabo autem deserunt harum.</p>
-                        <div class="ideaBlock-hover">
-                            <div class="hover-content-wrap">
-                                <div class="hover-content">
-                                    <span>
-                                        <img src="../img/authSite/readMore.png" />
-                                    </span>
-                                    <h2>Read More</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="idea.html">
-                    <div class="ideaBlock">
-                        <h3>Title</h3>
-                        <div class="point-block">
-                            <div class="points">45</div>
-                            <span>Points</span>
-                        </div>
-                        <div class="hash-block">
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, eveniet rem, voluptates esse ex id officia enim aspernatur similique nihil error, dolorum ab necessitatibus earum fuga pariatur! Asperiores provident earum enim, a tenetur nam ipsa neque esse optio nostrum eius fugit dicta, natus voluptate necessitatibus iusto explicabo autem deserunt harum.</p>
-                        <div class="ideaBlock-hover">
-                            <div class="hover-content-wrap">
-                                <div class="hover-content">
-                                    <span>
-                                        <img src="../img/authSite/readMore.png" />
-                                    </span>
-                                    <h2>Read More</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="idea.html">
-                    <div class="ideaBlock">
-                        <h3>Title</h3>
-                        <div class="point-block">
-                            <div class="points">45</div>
-                            <span>Points</span>
-                        </div>
-                        <div class="hash-block">
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, eveniet rem, voluptates esse ex id officia enim aspernatur similique nihil error, dolorum ab necessitatibus earum fuga pariatur! Asperiores provident earum enim, a tenetur nam ipsa neque esse optio nostrum eius fugit dicta, natus voluptate necessitatibus iusto explicabo autem deserunt harum.</p>
-                        <div class="ideaBlock-hover">
-                            <div class="hover-content-wrap">
-                                <div class="hover-content">
-                                    <span>
-                                        <img src="../img/authSite/readMore.png" />
-                                    </span>
-                                    <h2>Read More</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="idea.html">
-                    <div class="ideaBlock">
-                        <h3>Title</h3>
-                        <div class="point-block">
-                            <div class="points">45</div>
-                            <span>Points</span>
-                        </div>
-                        <div class="hash-block">
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, eveniet rem, voluptates esse ex id officia enim aspernatur similique nihil error, dolorum ab necessitatibus earum fuga pariatur! Asperiores provident earum enim, a tenetur nam ipsa neque esse optio nostrum eius fugit dicta, natus voluptate necessitatibus iusto explicabo autem deserunt harum.</p>
-                        <div class="ideaBlock-hover">
-                            <div class="hover-content-wrap">
-                                <div class="hover-content">
-                                    <span>
-                                        <img src="../img/authSite/readMore.png" />
-                                    </span>
-                                    <h2>Read More</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="idea.html">
-                    <div class="ideaBlock">
-                        <h3>Title</h3>
-                        <div class="point-block">
-                            <div class="points">45</div>
-                            <span>Points</span>
-                        </div>
-                        <div class="hash-block">
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                            <div class="tag">#tag</div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, eveniet rem, voluptates esse ex id officia enim aspernatur similique nihil error, dolorum ab necessitatibus earum fuga pariatur! Asperiores provident earum enim, a tenetur nam ipsa neque esse optio nostrum eius fugit dicta, natus voluptate necessitatibus iusto explicabo autem deserunt harum.</p>
-                        <div class="ideaBlock-hover">
-                            <div class="hover-content-wrap">
-                                <div class="hover-content">
-                                    <span>
-                                        <img src="../img/authSite/readMore.png" />
-                                    </span>
-                                    <h2>Read More</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
+                </div>
 
 
                 <center>
-                    <div class="pages">
-                        <a href="#"><div class="left"></div></a>
-                        <a href="#"><span class="active">1</span></a>
-                        <a href="#"><span>2</span></a>
-                        <a href="#"><span>3</span></a>
-                        <a href="#"><span>4</span></a>
-                        <a href="#"><span>5</span></a>
-                        <a href="#"><div class="right"></div></a>
-                    </div>
+                    <ul class="pagination pagination-warning pagination-lg">
+                        <li><a href="#"><</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">></a></li>
+                    </ul>
+                </center>
+                <!--<center>
+                <div class="pages">
+                    <a href="#"><div class="left"></div></a>
+                    <a href="#"><span class="active">1</span></a>
+                    <a href="#"><span>2</span></a>
+                    <a href="#"><span>3</span></a>
+                    <a href="#"><span>4</span></a>
+                    <a href="#"><span>5</span></a>
+                    <a href="#"><div class="right"></div></a>
+                </div>-->
                 </center>
 
             </div>
-
-            <footer id="footer">
-                <div class="my-container">
-                    <ul>
-                        <li>All rights reserved &copy; 2016</li>
-                        <li>
-                            <ul class="social-icons">
-                                <li class="linkedin"></li>
-                                <li class="googlePlus"></li>
-                                <li class="twitter"></li>
-                                <li class="fb"></li>
-                                <li class="vk"></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </footer>
         </section>
-
-        <div class="filter">
-            <h3>Filter</h3>
-            <button id="openButton"></button>
-            <form>
-                <label onmousedown="return false" onselectstart="return false"><input type="checkbox" />Some option</label>
-                <label onmousedown="return false" onselectstart="return false"><input type="checkbox" />Some option</label>
-                <label onmousedown="return false" onselectstart="return false"><input type="checkbox" />Some option</label>
-                <hr>
-                <select>
-                    <option value="Option 1">Option 1</option>
-                    <option value="Option 2">Option 2</option>
-                    <option value="Option 3">Option 3</option>
-                </select>
-                <input class="date" type="text" placeholder="DD/MM/YYYY" />
-                <div class="dateIcon"></div>
-                <input type="submit" value="Search" />
-            </form>
-        </div>
     </div>
+    </div>
+    <footer id="footer">
+        <div class="my-container">
+            <ul>
+                <li>All rights reserved &copy; 2016</li>
+                <li>
+                    <ul class="social-icons">
+                        <li class="linkedin"></li>
+                        <li class="googlePlus"></li>
+                        <li class="twitter"></li>
+                        <li class="fb"></li>
+                        <li class="vk"></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
+
+    <script src="../js/material.min.js"></script>
+    <script src="../js/material-kit.js"></script>
     <script src="../js/filter.js"></script>
 </body>
 </html>

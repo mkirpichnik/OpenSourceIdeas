@@ -1,0 +1,36 @@
+﻿body {
+    line-height: 1.42857143 !important;
+}
+
+.navbar {
+    border-radius: 0;
+    /*background: rgb(37, 5, 136);*/
+    background: rgb(57, 57, 58);
+}
+
+.navbar-nav {
+    float: none;
+}
+
+.navbar .navbar-nav > li > a ,
+.navbar .navbar-nav > li.active > a{
+    text-transform: none;
+    color: #fff;
+}
+
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li.active > a:hover {
+    color: #ABA8A8;
+}
+
+.pagination > li > a, .pagination > li > span {
+    width: 40px !important;
+    height: 40px !important;
+    line-height: 40px !important;
+}
+
+.col-md-12,
+.col-md-8,
+.col-md-4 {
+    padding: 0 !important;
+}
