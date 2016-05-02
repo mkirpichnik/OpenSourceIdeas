@@ -34,3 +34,7 @@
 .col-md-4 {
     padding: 0 !important;
 }
+
+.panel-dark > .panel-heading {
+    background: #39393A;  
+}

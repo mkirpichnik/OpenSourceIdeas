@@ -1,6 +1,6 @@
 ﻿body {
     min-width: 1200px;
-    background: none !important;
+    /*background: none !important;*/
     background: #ccc;
 }
 
@@ -487,15 +487,23 @@ a:focus {
     top: -8px;
     background-color: transparent;
     outline: 0;
-    border: 1px solid #000;
     border-radius: 10px;
     width: 1019px;
     padding-left: 55px;
     padding-right: 10px;
-    margin-left: -13px;
+    /*margin-left: -13px;*/
     font-size: 17px;
     margin-bottom: 50px;
     background: url("../img/authSite/search.png") 1% 50% no-repeat;
+    border: 1px solid #03a9f4;
+    transition: linear 0.3s;
+}
+
+#ideaBody .search-field:focus {
+    border: 1px solid #03a9f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    transition: linear 0.3s;
 }
 
 #ideaBody .search-button {
@@ -504,20 +512,21 @@ a:focus {
     margin-left: 20px;
     width: 156px;
     height: 40px;
-    background-color: transparent;
+    /*background-color: transparent;*/
     outline: 0;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
     border-radius: 5px;
     position: relative;
-    top: -7px;
+    top: -12px;
     transition: all .2s ease-in-out;
+    padding: 0 !important;
 }
 
-    #ideaBody .search-button:hover {
+    /*#ideaBody .search-button:hover {
         transition: all .2s ease-in-out;
         background-color: #000;
         color: #fff;
-    }
+    }*/
 
 #ideaBody .ideaBlock {
     /*border:1px solid #000;
@@ -564,7 +573,7 @@ a:focus {
 }
 
 .hash-block {
-    width: 1000px;
+    /*width: 1000px;*/
     margin-top: 15px;
 }
 
@@ -579,7 +588,7 @@ a:focus {
     border: 1px solid #000;
     border-radius: 5px;
     color: #000 !important;
-    background: url("../img/authSite/commerce.png") 90% 50% no-repeat !important;
+    background: url("../img/authSite/commerce1.png") 90% 50% no-repeat !important;
     margin-right: 5px !important;
     margin-bottom: 7px;
     cursor: pointer;
@@ -623,7 +632,7 @@ a:focus {
 #ideaBody .ideaBlock p {
     font-family: 'open_sanslight';
     font-size: 15px;
-    width: 1000px;
+    /*width: 1000px;*/
     margin-top: 20px;
 }
 
@@ -667,7 +676,7 @@ a:focus {
 #user-info .user-photo .userPhoto-hover .hover-content-wrap {
     display: table;
     margin: 0 auto;
-    width: 300px;
+    width: 150px;
     height: 100%;
 }
 
@@ -675,7 +684,7 @@ a:focus {
 #ideaBody .ideaBlock .ideaBlock-hover .hover-content,
 #user-info .user-photo .userPhoto-hover .hover-content {
     display: table-cell;
-    width: 300px;
+    width: 150px;
     vertical-align: middle;
 }
 
@@ -697,6 +706,16 @@ a:focus {
     height: auto;
     margin: 0 auto 10px auto;
     display: block;
+}
+
+.ideaBlock-img {
+}
+
+.ideaBlock-img img {
+    width: 100%;
+    padding: 0 20px 0 10px;
+    height: auto;
+    height: 235px;
 }
 
 .block-hover span {
@@ -1009,14 +1028,15 @@ a:focus {
     border: 1px solid #000;
     border-radius: 5px;
     text-align: left;
+    padding-bottom: 40px;
     margin-top: 50px;
 }
 
 #ideaPage .attachment {
     cursor: pointer;
     display: inline-block;
-    height: 370px;
-    width: 370px;
+    height: 150px;
+    width: 150px;
     border: 1px solid #000;
     border-radius: 5px;
     /*margin-left:10px;
@@ -1045,11 +1065,11 @@ a:focus {
 
     #ideaPage .attachment span {
         font-family: 'open_sanslight';
-        font-size: 50px;
+        font-size: 24px;
         display: block;
         text-align: center;
-        margin-top: 270px;
-        width: 370px;
+        margin-top: 150px;
+        width: 150px;
         overflow: hidden;
     }
 
@@ -1150,7 +1170,7 @@ a:focus {
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;    
 }
 
     #ideaPage .comment .user {
@@ -1172,9 +1192,10 @@ a:focus {
         width: 100px;
         height: 100px;
         border-radius: 50%;
-        border: 1px solid #000;
+        /*border: 1px solid #000;*/
         text-align: center;
         overflow: hidden;
+        /*padding: 2px;*/
     }
 
         #ideaPage .comment .image-container img {
@@ -1213,21 +1234,22 @@ a:focus {
 
     #ideaPage .comment .reply-button {
         width: 130px;
-        height: 45px;
+        /*height: 45px;*/
         outline: 0;
         font-family: 'open_sansbold';
-        border: 1px solid #000;
-        background-color: transparent;
-        font-size: 20px;
+        /*border: 1px solid #000;
+        background-color: transparent;*/
+        /*font-size: 14px;*/
         margin-bottom: 10px;
-        transition: all .2s ease-in-out;
+        /*transition: all .2s ease-in-out;*/
+        /*padding: 0;*/
     }
 
-        #ideaPage .comment .reply-button:hover {
+        /*#ideaPage .comment .reply-button:hover {
             background-color: #000;
             color: #fff;
             transition: all .2s ease-in-out;
-        }
+        }*/
 
 #ideaPage .reply {
     width: 800px;
@@ -1557,7 +1579,6 @@ a:focus {
     margin-right: 30px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    min-height: 580px;
     /*padding:25px;*/
     /*float:left;*/
     outline: 0;
@@ -1686,13 +1707,13 @@ a:focus {
 }
 
 #achievements .section-content .block > .round {
-    border: 1.5px solid #EC971F;
+    border: 1.5px solid #03A9F4;
     display: table;
     transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
     #achievements .section-content .block > .round:hover {
-        background: #EC971F;
+        background: #03A9F4;
         color: #fff;
         transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         border: 1px solid #fff;
