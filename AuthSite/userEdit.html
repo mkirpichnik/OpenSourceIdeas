@@ -8,7 +8,7 @@
     <link href="../css/fonts.css" rel="stylesheet" />
     <link href="../css/style.css" rel="stylesheet" />
     <link href="../css/slick.css" rel="stylesheet" />
-    <link href="../css/slick-theme.css" rel="stylesheet"/>
+    <link href="../css/slick-theme.css" rel="stylesheet" />
     <link href="../css/material-kit.css" rel="stylesheet" />
     <link href="../css/material-edit.css" rel="stylesheet" />
     <title>OpenSourceIdeas | UserPage</title>
@@ -23,7 +23,7 @@
                             <img src="../img/authSite/logo1.png" />
                         </a>
                     </li>
-                    <li class="active"><a href="main.html">Main</a></li>
+                    <li><a href="main.html">Main</a></li>
                     <li><a href="ideas.html">Ideas</a></li>
                     <li><a href="aboutUs.html">About Us</a></li>
                     <li class="pull-right image-link">
@@ -65,12 +65,12 @@
     </header>
 
 
-<section id="user-info">
+    <section id="user-info">
         <div class="main main-raised">
             <div class="my-container">
-                <div class="edit">
+                <!--<div class="edit">
                     <img src="../img/authSite/edit-small.png" />
-                </div>
+                </div>-->
                 <!--<div class="user-info-wrapper">
                     <div class="user-info-left">
                         <ul class="about-user">
@@ -138,23 +138,45 @@
                 <div class="col-md-12">
 
                     <div class="col-md-8">
-                        <h2>Yuriy Ivanskyi</h2>
-                        <p><strong>Position: </strong> Web-designer.
-                        </p>
-                        <p><strong>Hobby: </strong> Books, nature, leisure, Web design, design, layout
-                        </p>
-                        <p><strong>Age: </strong>18
+                        <h2>
+                            <div class="input-wrap">
+                                <input type="text" class="nostyle-input" value="Yuriy Ivanskyi" placeholder="Your name" />
+                            </div>
+                        </h2>
+                        <p>
+                            <div class="input-wrap">
+                                <strong>Position: </strong>
+                                <input type="text" class="nostyle-input" value="Web-designer" placeholder="Your position" />
+                            </div>
                         </p>
                         <p>
-                            <strong>City: </strong> Gorodok
+                            <div class="input-wrap">
+                                <strong>Hobby:  </strong>
+                                <input type="text" class="nostyle-input" value="Books, Web design" placeholder="Your hobby" />
+                            </div>
                         </p>
                         <p>
-                            <strong>Email: </strong>yura@gmail.com
+                            <div class="input-wrap">
+                                <strong>Age: </strong>
+                                <input type="text" class="nostyle-input" value="18" placeholder="Your age" />
+                            </div>
+                        </p>
+                        <p>
+                            <div class="input-wrap">
+                                <strong>City: </strong>
+                                <input type="text" class="nostyle-input" value="Gorodok" placeholder="Your city" />
+                            </div>
+                        </p>
+                        <p>
+                            <div class="input-wrap">
+                                <strong>Email: </strong>
+                                <input type="text" class="nostyle-input" value="yura@gmail.com" placeholder="Your email" />
+                            </div>
                         </p>
                     </div>
                     <div class="col-md-4 text-center">
                         <figure>
-                            <img src="../img/authSite/christian.jpg" class="img-circle img-raised"/>
+                            <img src="../img/authSite/christian.jpg" class="img-circle img-raised" />
                             <figcaption class="ratings">
                                 <p>
                                     <a href="#">
@@ -179,67 +201,72 @@
                 </div>
                 <div class="col-md-12 divider text-center">
                     <div class="col-md-4 emphasis">
-                        <h2><strong> 32,4K </strong>
+                        <h2>
+                            <strong> 32,4K </strong>
                         </h2>
                         <p>Ideas</p>
                     </div>
                     <div class="col-md-4 emphasis">
-                        <h2><strong>723</strong>
+                        <h2>
+                            <strong>723</strong>
                         </h2>
                         <p>Successful</p>
                     </div>
                     <div class="col-md-4 emphasis">
-                        <h2><strong>74</strong>
+                        <h2>
+                            <strong>74</strong>
                         </h2>
                         <p>Fails</p>
                     </div>
                 </div>
             </div>
 
-        <section id="ideaBody">
-            <div class="my-container">
-                <div class="ideaBody-title">
-                    <span>Ideas:</span>
-                    <br />
-                    <button class="btn btn-warning btn-raised">Add idea</button>
-                </div>
-                <div class="panel panel-dark ideaBlock">
-                    <div class="panel-heading">
-                        <div class="panel-title">
-                            <h4>Title</h4>
-                        </div>
+            <section id="ideaBody">
+                <div class="my-container">
+                    <div class="ideaBody-title">
+                        <span>Ideas:</span>
+                        <br />
+                        <a href="addIdea.html">
+                            <button class="btn btn-warning btn-raised">Add idea</button>
+                        </a>
                     </div>
-                    <div class="panel-body">
-                        <div class="col-md-12">
-                            <div class="col-md-4 ideaBlock-img">
-                                <img src="../img/authSite/template-photo.png" />
-                            </div>
-                            <div class="col-md-8">
-                                <div class="point-block">
-                                    <div class="points">45</div>
-                                    <span>Points</span>
-                                </div>
-                                <div class="hash-block">
-                                    <div class="tag">#tag</div>
-                                    <div class="tag">#tag</div>
-                                    <div class="tag">#tag</div>
-                                    <div class="tag">#tag</div>
-                                    <div class="tag">#tag</div>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, eveniet rem, voluptates esse ex id officia enim aspernatur similique nihil error, dolorum ab necessitatibus earum fuga pariatur! Asperiores provident earum enim, a tenetur nam ipsa neque esse optio nostrum eius fugit dicta, natus voluptate necessitatibus iusto explicabo autem deserunt harum.</p>
-                                <a href="idea.html">
-                                    <button class="btn btn-info btn-raised btn-read-more">Edit</button>
-                                </a>
-                                <a href="idea.html">
-                                    <button class="btn btn-danger btn-raised btn-read-more">Delete</button>
-                                </a>
+                    <div class="panel panel-dark ideaBlock">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <h4>Title</h4>
                             </div>
                         </div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <div class="col-md-4 ideaBlock-img">
+                                    <img src="../img/authSite/template-photo.png" />
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="point-block">
+                                        <div class="points">45</div>
+                                        <span>Points</span>
+                                    </div>
+                                    <div class="hash-block">
+                                        <div class="tag">#tag</div>
+                                        <div class="tag">#tag</div>
+                                        <div class="tag">#tag</div>
+                                        <div class="tag">#tag</div>
+                                        <div class="tag">#tag</div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, eveniet rem, voluptates esse ex id officia enim aspernatur similique nihil error, dolorum ab necessitatibus earum fuga pariatur! Asperiores provident earum enim, a tenetur nam ipsa neque esse optio nostrum eius fugit dicta, natus voluptate necessitatibus iusto explicabo autem deserunt harum.</p>
+                                    <a href="ideaEdit.html">
+                                        <button class="btn btn-info btn-raised btn-read-more">Edit</button>
+                                    </a>
+                                    <a href="#">
+                                        <button class="btn btn-danger btn-raised btn-read-more">Delete</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-            </div>
-        </section>
+                </div>
+            </section>
         </div>
         <footer id="footer">
             <div class="my-container">
@@ -262,9 +289,9 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="../js/slick.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script src="../js/material.min.js"></script>
-    <script src="../js/material-kit.js"></script>	
+    <script src="../js/material-kit.js"></script>
     <script src="../js/authPage.js"></script>
 </body>
 </html>

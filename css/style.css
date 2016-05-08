@@ -510,7 +510,7 @@ a:focus {
     font-family: 'open_sansregular';
     font-size: 20px;
     margin-left: 20px;
-    width: 156px;
+    width: 140px;
     height: 40px;
     /*background-color: transparent;*/
     outline: 0;
@@ -518,6 +518,7 @@ a:focus {
     border-radius: 5px;
     position: relative;
     top: -12px;
+    text-transform:none;
     transition: all .2s ease-in-out;
     padding: 0 !important;
 }
@@ -1480,7 +1481,7 @@ a:focus {
 }
 
 #slider-main-auth {
-    min-height: 60vh;
+    max-height: 65vh;
     background: #fff;
     text-align: center;
     margin-bottom: 50px;
@@ -2268,7 +2269,7 @@ a:focus {
 
 #footer {
     padding: 10px 0;
-    margin-top: 70px;
+    /*margin-top: 70px;*/
     border-bottom: none;
     border-top: 1px solid rgba(204, 204, 204, 0.32);
 }
@@ -2389,6 +2390,7 @@ a:focus {
     #user-info .main-raised,
     #ideaBody .main-raised {
         margin-top: 50px !important;
+        margin-bottom:40px !important;
     }
 
 
@@ -2477,6 +2479,39 @@ hr {
 
 
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+/*h2>.nostyle-input{
+    padding-left:0;
+}
+
+h2>.nostyle-input:focus{
+    padding-left:5px;
+}*/
+
+.input-wrap{
+    position:relative;
+    display:inline-block;
+}
+
+.nostyle-input{
+    width:250px;
+    padding:0;
+    border-radius:3px;
+    border-color:transparent;
+    border-bottom:2px solid transparent;
+    transition: all .2s ease-in-out;
+    /*margin-bottom:5px;*/
+    position:relative;
+}
+
+.nostyle-input:focus,
+.nostyle-input:hover{
+    padding:0 5px;
+    /*rgb(3, 169, 244)*/
+    border-bottom:2px solid rgb(251, 192, 45);
+    /*box-shadow: 0 0 2px rgba(0, 0, 0, 0.18), 0 2px 4px rgba(0, 0, 0, 0.36);*/
+        transition: all .2s ease-in-out;
+}
 
 body {
     font-family: 'Arial', 'sans-serif';
