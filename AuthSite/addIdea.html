@@ -1,18 +1,25 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>OpenSourceIdea | Add Idea</title>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../css/bootstrap.css" rel="stylesheet" />
-    <link href="../css/fonts.css" rel="stylesheet" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>OpenSourceIdeas | Add idea</title>
     <link href="../css/jquery.tag-editor.css" rel="stylesheet" />
-    <link href="../css/style.css" rel="stylesheet" />
-    <link href="../css/slick.css" rel="stylesheet" />
-    <link href="../css/slick-theme.css" rel="stylesheet"/>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <!-- Style -->
+    <link href="../css/style.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="../css/fonts.css" rel="stylesheet">
+
     <link href="../css/material-kit.css" rel="stylesheet" />
     <link href="../css/material-edit.css" rel="stylesheet" />
+
+    <!-- Other -->
+
 </head>
 <body>
     <header id="header">
@@ -65,65 +72,148 @@
         </nav>
     </header>
 
-<section id="ideaPage">
-    <div class="main main-raised">
-        <div class="my-container">
-            <div class="ideaPhoto">
-                <div class="idea-foto-wrap">
-                    <div class="idea-foto">
-                        <img src="../img/authSite/upload.png">
-                        <h2>Upload a photo</h2>
+    <div id="ideaPage">
+        <div class="main main-raised">
+            <div class="states-block-wrap">
+                <div class="state-block save">
+                    <button class="btn-save" data-toggle="tooltip" data-placement="bottom" title="Save your changes"></button>
+                </div>
+                <div class="state-block cancel">
+                    <button class="btn-cancel" data-toggle="tooltip" data-placement="bottom" title="Cancel your changes"></button>
+                </div>
+            </div>
+
+
+            <div class="notification-window">
+                <div class="alert alert-success notification-save">
+                    <div class="container-fluid">
+                        <div class="alert-icon">
+                            <i class="material-icons">check</i>
+                        </div>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true"><i class="material-icons">clear</i></span>
+                        </button>
+                        <b>Success:</b> Your idea successfuly added! Open <a href="idea.html"><i>your idea</i></a>
+                    </div>
+                </div>
+
+                <div class="alert alert-danger notification-cancel">
+                    <div class="container-fluid">
+                        <div class="alert-icon">
+                            <i class="material-icons">error_outline</i>
+                        </div>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true"><i class="material-icons">clear</i></span>
+                        </button>
+                        <b>Cancel:</b> Your idea not added!
                     </div>
                 </div>
             </div>
-            <div class="infoBlock">
-                <h1>Title</h1>
-                <h3 class="author-link">
-                    by <a href="user.html">author</a>
-                </h3>
-                <div class="hash-block">
-                    <div class="idea-tags-empty"></div>
+            <div class="idea-info-block">
+                <div class="my-container">
+                    <!--<div class="ideaPhoto"></div>-->
+                    <div class="infoBlock">
+                        <h1>
+                            <span class="input-wrap">
+                                <input type="text" class="nostyle-input nostyle-input-fluid" placeholder="Idea Name" />
+                            </span>
+                        </h1>
+                        <!--<h3 class="author-link">by <a href="user.html">author</a></h3>-->
+                        <div class="hash-block">
+                            <div class="idea-tags-empty"></div>
+                        </div>
+                        <div class="short-idea-desc">
+                            <textarea class="textarea-description textarea-short-description" placeholder="Enter short description about for idea"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="infoBlock-author">
+                        <!--<h1>Author</h1>-->
+                        <div class="user-photo-wrap">
+                            <img src="../img/authSite/yura.jpg" class="img-circle img-raised" />
+                        </div>
+
+                        <div class="author-details">
+                            <div class="author-name">
+                                Yuriy Ivanskyi
+                            </div>
+                            <div class="author-ideas-status">
+                                <div class="ideas-status-item blue">
+                                    <h2>
+                                        <strong> 1254 </strong>
+                                    </h2>
+                                    <p>Ideas</p>
+                                </div>
+                                <div class="ideas-status-item green">
+                                    <h2>
+                                        <strong> 723 </strong>
+                                    </h2>
+                                    <p>Successful</p>
+                                </div>
+                                <div class="ideas-status-item red">
+                                    <h2>
+                                        <strong> 74 </strong>
+                                    </h2>
+                                    <p>Fails</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <h1 class="section-heading">Description:</h1>
-            <div class="idea-description">
-                <textarea placeholder="Write description for your idea"></textarea>
-            </div>
+            <div class="my-container">
+                <h1 class="section-heading">
+                    <span class="editField">Description:</span>
+                </h1>
+                <textarea class="textarea-description" placeholder="Enter full description for your idea"></textarea>
 
-            <h1 class="section-heading">Add files:</h1>
-            <div class="attachments-block">
-                <div class="add-attachment attachment">
-                    <span>Add</span>
+                <hr />
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h4>Attachments</h4>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="attachments-block">
+                            <div class="add-attachment attachment">
+                                <span>Add</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <footer id="footer">
+            <div class="my-container">
+                <ul>
+                    <li>All rights reserved &copy; 2016</li>
+                    <li>
+                        <ul class="social-icons">
+                            <li class="linkedin"></li>
+                            <li class="googlePlus"></li>
+                            <li class="twitter"></li>
+                            <li class="fb"></li>
+                            <li class="vk"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </div>
-    <footer id="footer">
-        <div class="my-container">
-            <ul>
-                <li>All rights reserved &copy; 2016</li>
-                <li>
-                    <ul class="social-icons">
-                        <li class="linkedin"></li>
-                        <li class="googlePlus"></li>
-                        <li class="twitter"></li>
-                        <li class="fb"></li>
-                        <li class="vk"></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </footer>
-</section>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="../js/slick.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
     <script src="../js/material.min.js"></script>
-    <script src="../js/material-kit.js"></script>	
+    <script src="../js/material-kit.js"></script>
     <script src="../js/jquery.caret.min.js"></script>
     <script src="../js/jquery.tag-editor.min.js"></script>
+    <script src="../js/filter.js"></script>
+    <script src="../js/editPage.js"></script>
     <script src="../js/authPage.js"></script>
 </body>
 </html>

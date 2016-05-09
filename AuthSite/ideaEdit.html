@@ -1,19 +1,19 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>OpenSourceIdeas | Ideas</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>OpenSourceIdeas | Idea edit</title>
     <link href="../css/jquery.tag-editor.css" rel="stylesheet" />
 
-	<!-- Bootstrap -->
-	<link href="../css/bootstrap.css" rel="stylesheet">
-	<!-- Style -->
-	<link href="../css/style.css" rel="stylesheet">
-	<!-- Fonts -->
-	<link href="../css/fonts.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <!-- Style -->
+    <link href="../css/style.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="../css/fonts.css" rel="stylesheet">
 
     <link href="../css/material-kit.css" rel="stylesheet" />
     <link href="../css/material-edit.css" rel="stylesheet" />
@@ -31,7 +31,7 @@
                             <img src="../img/authSite/logo1.png" />
                         </a>
                     </li>
-                    <li class="active"><a href="main.html">Main</a></li>
+                    <li><a href="main.html">Main</a></li>
                     <li><a href="ideas.html">Ideas</a></li>
                     <li><a href="aboutUs.html">About Us</a></li>
                     <li class="pull-right image-link">
@@ -72,90 +72,162 @@
         </nav>
     </header>
 
-<div id="ideaPage">
-    <div class="main main-raised">
-        <div class="my-container">
-            <div class="ideaPhoto edit-block-hover-wrap">
-                <div class="block-hover">
-                    <div class="hover-content-wrap">
-                        <div class="hover-content">
-                            <span>
-                                <img src="../img/authSite/load.png" />
+    <div id="ideaPage">
+        <div class="main main-raised">
+            <div class="states-block-wrap">
+                <div class="state-block save">
+                    <button class="btn-save" data-toggle="tooltip" data-placement="bottom" title="Save your changes"></button>
+                </div>
+                <div class="state-block cancel">
+                    <button class="btn-cancel" data-toggle="tooltip" data-placement="bottom" title="Cancel your changes"></button>
+                </div>
+            </div>
+
+
+            <div class="notification-window">
+                <div class="alert alert-success notification-save">
+                    <div class="container-fluid">
+                        <div class="alert-icon">
+                            <i class="material-icons">check</i>
+                        </div>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true"><i class="material-icons">clear</i></span>
+                        </button>
+                        <b>Success:</b> Your idea successfuly saved! Open <a href="idea.html"><i>your idea</i></a>
+                    </div>
+                </div>
+
+                <div class="alert alert-danger notification-cancel">
+                    <div class="container-fluid">
+                        <div class="alert-icon">
+                            <i class="material-icons">error_outline</i>
+                        </div>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true"><i class="material-icons">clear</i></span>
+                        </button>
+                        <b>Cancel:</b> Your idea`s changes canceled!
+                    </div>
+                </div>
+            </div>
+            <div class="idea-info-block">
+                <div class="my-container">
+                    <!--<div class="ideaPhoto"></div>-->
+                    <div class="infoBlock">
+                        <h1>
+                            <span class="input-wrap">
+                                <input type="text" class="nostyle-input nostyle-input-fluid" value="Open Source Ideas" placeholder="Idea Name" />
                             </span>
-                            <h2>Load a photo</h2>
+                        </h1>
+                        <!--<h3 class="author-link">by <a href="user.html">author</a></h3>-->
+                        <div class="hash-block">
+                            <div class="idea-tags"></div>
+                        </div>
+                        <div class="short-idea-desc">
+                            <textarea class="textarea-description textarea-short-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam iste rerum ipsa necessitatibus rem distinctio ex unde, assumenda aspernatur quaerat placeat debitis, vel velit porro architecto veniam dicta explicabo fugiat omnis alias tempore nostrum, aliquid voluptates possimus.
+                            </textarea>
+                        </div>
+                    </div>
+
+                    <div class="infoBlock-author">
+                        <!--<h1>Author</h1>-->
+                        <div class="user-photo-wrap">
+                            <img src="../img/authSite/yura.jpg" class="img-circle img-raised" />
+                        </div>
+
+                        <div class="author-details">
+                            <div class="author-name">
+                                Yuriy Ivanskyi
+                            </div>
+                            <div class="author-ideas-status">
+                                <div class="ideas-status-item blue">
+                                    <h2>
+                                        <strong> 1254 </strong>
+                                    </h2>
+                                    <p>Ideas</p>
+                                </div>
+                                <div class="ideas-status-item green">
+                                    <h2>
+                                        <strong> 723 </strong>
+                                    </h2>
+                                    <p>Successful</p>
+                                </div>
+                                <div class="ideas-status-item red">
+                                    <h2>
+                                        <strong> 74 </strong>
+                                    </h2>
+                                    <p>Fails</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="infoBlock">
-                <h1>
-                    <span class="editField">Title</span>
+            <div class="my-container">
+                <h1 class="section-heading">
+                    <span class="editField">Description:</span>
                 </h1>
-                <h3 class="author-link">
-                    by <a href="user.html">author</a>
-                </h3>
-                <div class="hash-block">
-                    <div class="idea-tags"></div>
-                </div>
-                <div class="point-block">
-                    <div class="points">45</div>
-                    <span>Likes</span>
-                </div>
-                <!--<div class="like-block">
-                    <span>Like it!</span>
-                    <div class="like-image"></div>
-                </div>-->
-            </div>
-            <h1 class="section-heading">
-                <span class="editField">Description:</span>
-            </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam iste rerum ipsa necessitatibus rem distinctio ex unde, assumenda aspernatur quaerat placeat debitis, vel velit porro architecto veniam dicta explicabo fugiat omnis alias tempore nostrum, aliquid voluptates possimus. Odio mollitia dolorum corporis deserunt, obcaecati architecto hic recusandae animi magni natus! Sit, expedita quae. Soluta perferendis, magni dicta sed. Reiciendis, labore? Assumenda adipisci eum nihil, aperiam maiores at dolores ipsa sapiente, velit! Perferendis dolorum odit veritatis ipsam dolor iusto, deserunt consectetur dignissimos eaque.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam iste rerum ipsa necessitatibus rem distinctio ex unde, assumenda aspernatur quaerat placeat debitis, vel velit porro architecto veniam dicta explicabo fugiat omnis alias tempore nostrum, aliquid voluptates possimus. Odio mollitia dolorum corporis deserunt, obcaecati architecto hic recusandae animi magni natus! Sit, expedita quae. Soluta perferendis, magni dicta sed. Reiciendis, labore? Assumenda adipisci eum nihil, aperiam maiores at dolores ipsa sapiente, velit! Perferendis dolorum odit veritatis ipsam dolor iusto, deserunt consectetur dignissimos eaque.</p>
+                <textarea class="textarea-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam iste rerum ipsa necessitatibus rem distinctio ex unde, assumenda aspernatur quaerat placeat debitis, vel velit porro architecto veniam dicta explicabo fugiat omnis alias tempore nostrum, aliquid voluptates possimus. Odio mollitia dolorum corporis deserunt, obcaecati architecto hic recusandae animi magni natus! Sit, expedita quae. Soluta perferendis, magni dicta sed. Reiciendis, labore? Assumenda adipisci eum nihil, aperiam maiores at dolores ipsa sapiente, velit! Perferendis dolorum odit veritatis ipsam dolor iusto, deserunt consectetur dignissimos eaque.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam iste rerum ipsa necessitatibus rem distinctio ex unde, assumenda aspernatur quaerat placeat debitis, vel velit porro architecto veniam dicta explicabo fugiat omnis alias tempore nostrum, aliquid voluptates possimus. Odio mollitia dolorum corporis deserunt, obcaecati architecto hic recusandae animi magni natus! Sit, expedita quae. Soluta perferendis, magni dicta sed. Reiciendis, labore? Assumenda adipisci eum nihil, aperiam maiores at dolores ipsa sapiente, velit! Perferendis dolorum odit veritatis ipsam dolor iusto, deserunt consectetur dignissimos eaque.
+                </textarea>
 
-            <div class="attachments-block">
-                <div class="word attachment attachment-edit">
-                    <span>File1.doc</span>
-                </div>
-                <div class="excel attachment attachment-edit">
-                    <span>File2.xlsx</span>
-                </div>
-                <div class="powerpoint attachment attachment-edit">
-                    <span>File3.pptx</span>
-                </div>
-                <div class="add-attachment attachment">
-                    <span>Add</span>
+                <hr />
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h4>Attachments</h4>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="attachments-block">
+                            <div class="word attachment attachment-edit">
+                                <span>File1.doc</span>
+                            </div>
+                            <div class="excel attachment attachment-edit">
+                                <span>File2.xlsx</span>
+                            </div>
+                            <div class="powerpoint attachment attachment-edit">
+                                <span>File3.pptx</span>
+                            </div>
+                            <div class="add-attachment attachment">
+                                <span>Add</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <footer id="footer">
+            <div class="my-container">
+                <ul>
+                    <li>All rights reserved &copy; 2016</li>
+                    <li>
+                        <ul class="social-icons">
+                            <li class="linkedin"></li>
+                            <li class="googlePlus"></li>
+                            <li class="twitter"></li>
+                            <li class="fb"></li>
+                            <li class="vk"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </div>
-    <footer id="footer">
-        <div class="my-container">
-            <ul>
-                <li>All rights reserved &copy; 2016</li>
-                <li>
-                    <ul class="social-icons">
-                        <li class="linkedin"></li>
-                        <li class="googlePlus"></li>
-                        <li class="twitter"></li>
-                        <li class="fb"></li>
-                        <li class="vk"></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </footer>
-</div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script src="../js/material.min.js"></script>
     <script src="../js/material-kit.js"></script>
     <script src="../js/jquery.caret.min.js"></script>
     <script src="../js/jquery.tag-editor.min.js"></script>
     <script src="../js/filter.js"></script>
+    <script src="../js/editPage.js"></script>
     <script src="../js/authPage.js"></script>
 </body>
 </html>

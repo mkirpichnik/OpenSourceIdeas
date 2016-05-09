@@ -11,7 +11,7 @@
     <link href="../css/slick-theme.css" rel="stylesheet" />
     <link href="../css/material-kit.css" rel="stylesheet" />
     <link href="../css/material-edit.css" rel="stylesheet" />
-    <title>OpenSourceIdeas | UserPage</title>
+    <title>OpenSourceIdeas | User edit</title>
 </head>
 <body>
     <header id="header">
@@ -64,84 +64,51 @@
         </nav>
     </header>
 
-
     <section id="user-info">
         <div class="main main-raised">
-            <div class="my-container">
-                <!--<div class="edit">
-                    <img src="../img/authSite/edit-small.png" />
-                </div>-->
-                <!--<div class="user-info-wrapper">
-                    <div class="user-info-left">
-                        <ul class="about-user">
-                            <li class="about-item edit-item">
-                                <ul>
-                                    <li class="field-type">Name:</li>
-                                    <li class="field-value">Yuriy</li>
-                                </ul>
-                            </li>
-                            <li class="about-item edit-item">
-                                <ul>
-                                    <li class="field-type">Surname:</li>
-                                    <li class="field-value">Ivanskyi</li>
-                                </ul>
-                            </li>
-                            <li class="about-item edit-item">
-                                <ul>
-                                    <li class="field-type">Age:</li>
-                                    <li class="field-value">18</li>
-                                </ul>
-                            </li>
-                            <li class="about-item edit-item">
-                                <ul>
-                                    <li class="field-type">City:</li>
-                                    <li class="field-value">Gorodok</li>
-                                </ul>
-                            </li>
-                            <li class="about-item edit-item">
-                                <ul>
-                                    <li class="field-type">Email:</li>
-                                    <li class="field-value">yura@gmail.com</li>
-                                </ul>
-                            </li>
-                            <li class="about-item edit-item">
-                                <ul>
-                                    <li class="field-type">Facebook:</li>
-                                    <li class="field-value">https://www.facebook.com/yuriy.ivanskyi</li>
-                                </ul>
-                            </li>
+            <div class="states-block-wrap">
+                <div class="state-block save">
+                    <button class="btn-save" data-toggle="tooltip" data-placement="bottom" title="Save your changes"></button>
+                </div>
+                <div class="state-block cancel">
+                    <button class="btn-cancel" data-toggle="tooltip" data-placement="bottom" title="Cancel your changes"></button>
+                </div>
+            </div>
 
-                            <li class="about-item edit-item">
-                                <ul>
-                                    <li class="field-type">Skype:</li>
-                                    <li class="field-value">amfibia1111</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="user-info-right">
-                        <div class="user-photo">
-                            <img src="../img/authSite/User-icon-large.png"/>
-                            <div class="userPhoto-hover">
-                                <div class="hover-content-wrap">
-                                    <div class="hover-content">
-                                        <span>
-                                            <img src="../img/authSite/edit.png" />
-                                        </span>
-                                        <h2>Edit</h2>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="notification-window">
+                <div class="alert alert-success notification-save">
+                    <div class="container-fluid">
+                        <div class="alert-icon">
+                            <i class="material-icons">check</i>
                         </div>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true"><i class="material-icons">clear</i></span>
+                        </button>
+                        <b>Success:</b> Your profile successfuly saved! Open <a href="user.html"><i>your profile</i></a>
                     </div>
-                </div>-->
-                <div class="col-md-12">
+                </div>
 
+                <div class="alert alert-danger notification-cancel">
+                    <div class="container-fluid">
+                        <div class="alert-icon">
+                            <i class="material-icons">error_outline</i>
+                        </div>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true"><i class="material-icons">clear</i></span>
+                        </button>
+                        <b>Cancel:</b> Your profile`s changes canceled!
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-container">
+                <input type="text" class="nostyle-input" value="Yuriy Ivanskyi" placeholder="Your name" />
+                <div class="col-md-12">
                     <div class="col-md-8">
                         <h2>
-                            <div class="input-wrap">
+                            <span class="input-wrap">
                                 <input type="text" class="nostyle-input" value="Yuriy Ivanskyi" placeholder="Your name" />
-                            </div>
+                            </span>
                         </h2>
                         <p>
                             <div class="input-wrap">
@@ -176,26 +143,7 @@
                     </div>
                     <div class="col-md-4 text-center">
                         <figure>
-                            <img src="../img/authSite/christian.jpg" class="img-circle img-raised" />
-                            <figcaption class="ratings">
-                                <p>
-                                    <a href="#">
-                                        <span class="fa fa-star"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="fa fa-star"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="fa fa-star"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="fa fa-star"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="fa fa-star-o"></span>
-                                    </a>
-                                </p>
-                            </figcaption>
+                            <img src="../img/authSite/yura.jpg" class="img-circle img-raised" />
                         </figure>
                     </div>
                 </div>
@@ -264,7 +212,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </section>
         </div>
@@ -292,6 +239,6 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/material.min.js"></script>
     <script src="../js/material-kit.js"></script>
-    <script src="../js/authPage.js"></script>
+    <script src="../js/editPage.js"></script>
 </body>
 </html>
