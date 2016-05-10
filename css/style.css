@@ -120,6 +120,7 @@ figure img {
 
 .emphasis {
     border-top: 4px solid transparent;
+    z-index:99999999;
 }
 
 .emphasis:nth-of-type(1):hover {
@@ -2165,6 +2166,7 @@ figure img {
 .input-wrap{
     position:relative;
     width:100%;
+    z-index:99999999;
 }
 
 .nostyle-input{
