@@ -1,6 +1,6 @@
 ﻿$(function () {
     $('.idea-tags').tagEditor({
-        initialTags: ['#tag', '#tag', '#tag', '#tag'],
+        initialTags: ['#Open Source', '#Free','#Users', '#Perspective', '#Online'],
          delimiter: ', ', /* space and comma */
          placeholder: 'Enter tags ...'
     });
