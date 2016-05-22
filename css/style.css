@@ -359,7 +359,7 @@ figure img {
 #fullpage form input[type="password"] {
     font-family: 'open_sanslight';
     display: block;
-    width: 80%;
+    width: 100%;
     height: 50px;
     margin: 0 auto;
     margin-bottom: 10px;
