@@ -8,12 +8,16 @@
     $('.news-slider').slick({
         dots: true,
         infinite: true,
-        speed: 600,
+        speed: 800,
         slidesToShow: 3,
         slidesToScroll: 3
     });
 
-    $(".news-next-btn").on('click', function () {
+    $("#next-slider").on('click', function () {
         $(".news-slider").slick("slickNext");
+    });
+
+    $("#prev-slider").on('click', function () {
+        $(".news-slider").slick("slickPrev");
     });
 });

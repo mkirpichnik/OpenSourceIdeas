@@ -101,7 +101,7 @@ figure img {
 .section-header > h2 {
     font-family: 'open_sansbold';
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .divider {
@@ -261,6 +261,10 @@ figure img {
     background: url("../img/up-arrow.png") 50% 50% no-repeat;
 }
 
+#fullpage .round2{
+    background: rgba(0,0,0,0.5) !important;
+}
+
 .quote {
     font-family: 'open_sanslight';
     color: #fff;
@@ -304,10 +308,15 @@ figure img {
     text-align: center;
 }
 
+.logFB{
+    margin-top:5px;
+}
+
 .text1 {
     font-family: 'open_sanslight';
     color: #fff;
     float: left;
+    font-size:16px;
 }
 
 .text2 {
@@ -337,6 +346,7 @@ figure img {
     border: 1px solid #fff;
     margin: 0 auto;
     padding: 20px;
+        background: rgba(0,0,0,0.4);
 }
 
 #fullpage form input,
@@ -361,15 +371,32 @@ figure img {
     font-size: 20px;
 }
 
+.password,
+.confirmPassword,
+.loginPassword{
+    position:relative;
+}
+
+.loginPassword .glyphicon,
+.confirmPassword .glyphicon,
+.password .glyphicon{
+    display:none;
+    position: absolute;
+    color: #fff;
+    top: 34%;
+    right: 7%;
+    cursor:pointer;
+}
+
 #fullpage form input::-webkit-input-placeholder {
     color: #fff;
 }
 
 #fullpage form .submitButton {
-    display: block;
+    display: inline-block;
     font-family: 'open_sansbold';
-    width: 150px;
-    height: 50px;
+    width: 108px;
+    height: 49px;
     background-color: transparent;
     color: #fff;
     border: 1px solid #fff;
@@ -382,6 +409,16 @@ figure img {
     padding: 0;
     position: relative;
     z-index: 20;
+    margin-right:10px;
+}
+
+#fullpage form .img-btn{
+    display:inline-block;
+}
+#fullpage form .img-btn,
+#fullpage form .img-btn img{
+    width: 108px;
+    height: 50px;
 }
 
 #fullpage form .submitButton:hover {
@@ -542,7 +579,7 @@ figure img {
 .four-slide textarea {
     font-family: 'open_sanslight';
     width: 350px;
-    height: 200px;
+    height: 150px;
     border: 1px solid #fff;
     background-color: transparent;
     outline: 0;
@@ -807,7 +844,7 @@ figure img {
 #user-info .user-photo .userPhoto-hover .hover-content,
 .block-hover .hover-content {
     display: table-cell;
-    width: 150px;
+    width: 128px;
     vertical-align: middle;
 }
 
@@ -818,6 +855,7 @@ figure img {
     margin: 0;
     font-family: 'open_sansregular';
     text-align: center;
+    font-size:22px;
 }
 
 #ideaBody .ideaBlock .ideaBlock-hover img,
@@ -1154,11 +1192,11 @@ figure img {
 #ideaPage .attachment {
     cursor: pointer;
     display: inline-block;
-    height: 200px;
-    width: 200px;
+    height: 186px;
+    width: 150px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin: 10px;
+    margin: 0 10px 10px 10px;
     vertical-align: bottom;
     position: relative;
 }
@@ -1171,8 +1209,8 @@ figure img {
     content: '';
     display: block;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 5px;
+    right: 5px;
     width: 24px;
     height: 24px;
     opacity: 1;
@@ -1184,8 +1222,8 @@ figure img {
     font-size: 24px;
     display: block;
     text-align: center;
-    margin-top: 160px;
-    width: 200px;
+    margin-top: 148px;
+    width: 150px;
     overflow: hidden;
 }
 
@@ -1472,6 +1510,11 @@ figure img {
     padding: 0 5px;
 }
 
+#header .image-link-horizontal{
+    margin-right: 0;
+    margin-left:30px;
+}
+
 #header .navigation > li:nth-of-type(5) {
     margin-right: 0;
 }
@@ -1487,7 +1530,7 @@ figure img {
 
 #header .image-link .text-link {
     display: block;
-    float: right;
+    /*float: right;*/
 }
 
 #header .text-link-under {
@@ -1508,7 +1551,7 @@ figure img {
 
 #header .image-horizontal {
     position: absolute;
-    right: -50%;
+    left: -50%;
     top: -30%;
 }
 
@@ -1600,14 +1643,14 @@ figure img {
 /*************Main Auth Slider*****************/
 
 #slider-main-auth {
-    height: 65vh;
+    height: 500px;
     background: rgb(204, 204, 204);
     text-align: center;
     margin-bottom: 50px;
 }
 
 #slider-main-auth .slider-item-wrap {
-    padding: 15vh 50px;
+    padding: 120px 50px;
     outline: none;
     width: 100%;
 }
@@ -1717,6 +1760,7 @@ figure img {
     border: 1px solid #ccc;
     border-radius: 3px;*/
     width:100%;
+    max-height:200px;
 }
 
 #startup-news .section-content .news-item .title {
@@ -1729,7 +1773,7 @@ figure img {
 }
 
 #startup-news .section-content .news-item .panel-body{
-    height:420px;
+    height:340px;
 }
 
 #startup-news .section-content .news-item .content {
@@ -1743,7 +1787,7 @@ figure img {
 }
 
 #startup-news .news-slider .slick-dots {
-    bottom: -75px !important;
+    bottom: -40px !important;
 }
 
 #startup-news .news-slider .slick-dots li button:before {
@@ -1763,6 +1807,7 @@ figure img {
     width: 120px;
     color: #000;
     border: 2px solid #000;
+    margin:0 !important;
 }
 
 .news-more-btn:hover {
@@ -1772,7 +1817,7 @@ figure img {
 
 .news-next-btn {
     display: inline;
-    margin-top: 40px !important;
+    /*margin-top: 40px !important;*/
 }
 
 /**************Achievements*****************/
@@ -2089,6 +2134,10 @@ figure img {
     color:#fff !important;
 }
 
+.tag-editor input{
+    width:160px !important;
+}
+
 .tag-editor .tag-editor-tag {
     margin-bottom: 0;
     margin-right: -5px !important;
@@ -2113,6 +2162,10 @@ figure img {
 .tag-editor .tag-editor-tag {
     visibility: visible !important;
     color:#fff !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
 }
 
 .tag-editor .tag-editor-delete i:before {
@@ -2139,6 +2192,11 @@ figure img {
 
 /************Gereral Styles For Editable Pages************/
 
+.editProfile{
+    position: absolute;
+    right: 50px;
+}
+
 .notification-window{
     position:fixed;
     width:400px;
@@ -2152,17 +2210,27 @@ figure img {
 }
 
 .states-block-wrap{
-    position: absolute;
+    /*position: absolute;
     right: 0;
     top: 0;
     display: table;
     width: 170px;
     height: 40px;
+    border-spacing: 30px;*/
+    position: fixed;
+    right: 30px;
+    top: 120px;
+    display: table;
+    width: 100px;
+    height: 40px;
     border-spacing: 30px;
+    background: rgba(0, 0, 0, 0.73);
+    border-radius: 5px;
+    z-index: 999999;
 }
 
 .state-block{
-    display: table-cell;
+    display: table-row;
     width: 57px;
     height: 40px;
 }
